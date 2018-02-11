@@ -1,0 +1,83 @@
+* source RING_45
+V_Vin         N00124 0 {vdd_nominal}
+M_not_1_M2         N05076 Q 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_1_M1         N05076 Q N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_2_M2         N05080 N05076 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_2_M1         N05080 N05076 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_3_M2         N05084 N05080 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_3_M1         N05084 N05080 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_4_M2         N05088 N05084 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_4_M1         N05088 N05084 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_5_M2         N05100 N05088 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_5_M1         N05100 N05088 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_6_M2         N05096 N05100 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_6_M1         N05096 N05100 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_7_M2         N05092 N05096 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_7_M1         N05092 N05096 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_8_M2         N05067 N05092 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_8_M1         N05067 N05092 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_9_M2         N05063 N05067 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_9_M1         N05063 N05067 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_10_M2         N08607 N05063 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_10_M1         N08607 N05063 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_11_M1         Q N08607 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_11_M2         Q N08607 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_or_M2         N00124 Q Q Q nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_or_M3         or_N00757 STIM Q Q pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_or_M4         0 Q or_N00757 or_N00757 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_or_M1         N00124 STIM Q Q nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+V_V1         STIM 0   STIMULUS=stim_01
+.PARAM  n_size_l=50nm p_to_n_ratio=1.44 p_size_w={ p_to_n_ratio * n_size_w }
++  n_size_w=800nm p_size_l={n_size_l} vdd_nominal=1.1

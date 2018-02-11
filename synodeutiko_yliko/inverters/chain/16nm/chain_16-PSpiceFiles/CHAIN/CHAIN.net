@@ -1,0 +1,67 @@
+* source CHAIN_16
+C_C1         0 OUTPUT  1f  TC=0,0 
+V_A         INPUT 0  
++PULSE 0 {vdd_nominal} 0 70p 10p 0.5n 1n
+V_Vin         N00124 0 {vdd_nominal}
+M_not_1_M2         N05076 INPUT 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_1_M1         N05076 INPUT N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_2_M2         N05080 N05076 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_2_M1         N05080 N05076 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_3_M2         N05084 N05080 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_3_M1         N05084 N05080 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_4_M2         N05088 N05084 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_4_M1         N05088 N05084 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_5_M2         N05100 N05088 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_5_M1         N05100 N05088 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_6_M2         N05096 N05100 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_6_M1         N05096 N05100 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_7_M2         N05092 N05096 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_7_M1         N05092 N05096 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_8_M2         N05067 N05092 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_8_M1         N05067 N05092 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_9_M2         N05063 N05067 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_9_M1         N05063 N05067 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_10_M2         OUTPUT N05063 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_10_M1         OUTPUT N05063 N00124 N00124 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+.PARAM  n_size_l=30nm p_to_n_ratio=0.975 p_size_w={ p_to_n_ratio * n_size_w }
++  n_size_w=400nm p_size_l={n_size_l} vdd_nominal=0.9

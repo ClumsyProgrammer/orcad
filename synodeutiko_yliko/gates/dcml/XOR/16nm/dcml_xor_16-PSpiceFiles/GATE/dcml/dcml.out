@@ -1,0 +1,421 @@
+
+**** 10/22/17 15:52:21 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "GATE-dcml"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\dcml\XOR\16nm\dcml_xor_16-pspicefiles\gate\dcml.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dcml.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+.STMLIB "../../../dcml_xor_16-pspicefiles/dcml_xor_16.stl" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\GATE.net" 
+
+
+
+**** INCLUDING GATE.net ****
+* source DCML_XOR_16
+M_XOR/XNOR_M4         XOR/XNOR_N00739 B XOR/XNOR_N00719 XOR/XNOR_N00719
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M2         XOR/XNOR_N00723 A N01008 N01008 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M13         N00980 N06437 XOR/XNOR_N00767 XOR/XNOR_N00767
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M11         N00976 N06437 XOR/XNOR_N00763 XOR/XNOR_N00763
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M9         XOR/XNOR_N00767 N06388 XOR/XNOR_N00739 XOR/XNOR_N00739
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M7         XOR/XNOR_N00763 N06388 XOR/XNOR_N00809 XOR/XNOR_N00809
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M5         XOR/XNOR_N00739 N06384 XOR/XNOR_N00723 XOR/XNOR_N00723
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M3         XOR/XNOR_N00809 N06384 XOR/XNOR_N00719 XOR/XNOR_N00719
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M1         XOR/XNOR_N00719 N06280 N01008 N01008 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M14         N00976 D XOR/XNOR_N00767 XOR/XNOR_N00767 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M12         N00980 D XOR/XNOR_N00763 XOR/XNOR_N00763 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M10         XOR/XNOR_N00767 C XOR/XNOR_N00809 XOR/XNOR_N00809
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M8         XOR/XNOR_N00763 C XOR/XNOR_N00739 XOR/XNOR_N00739
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M6         XOR/XNOR_N00809 B XOR/XNOR_N00723 XOR/XNOR_N00723
++  pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+C_C2         0 N00984  1f  TC=0,0 
+M_DCML_M7         N00984 CLK N01008 N01008 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_DCML_M15         DCML_N12198 DCML_N12198 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M4         N00984 N12507 DCML_N12214 DCML_N12214 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M10         N00984 N12507 DCML_N12208 DCML_N12208 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M1         N12507 N00984 N01008 N01008 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_DCML_M13         DCML_N12188 DCML_N12182 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M2         N00984 N12507 N01008 N01008 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_DCML_M3         N12507 N00984 DCML_N12214 DCML_N12214 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M11         N00980 N00984 DCML_N12198 DCML_N12198 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M5         DCML_N12214 CLK 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M12         DCML_N12182 DCML_N12182 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M8         N00976 N12507 DCML_N12182 DCML_N12182 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M6         N12507 CLK N01008 N01008 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_DCML_M14         DCML_N12208 DCML_N12198 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M9         N12507 N00984 DCML_N12188 DCML_N12188 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+C_C1         0 N12507  1f  TC=0,0 
+V_VDD         N01008 0 {vdd_nominal}
+M_not_A_M2         N06280 A 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_A_M1         N06280 A N01008 N01008 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+V_CLK         CLK 0  
++PULSE {vdd_nominal} 0 0 10p 10p 0.5n 1n
+V_V1         A 0   STIMULUS=stim_A
+V_V2         B 0   STIMULUS=stim_B
+V_V3         C 0   STIMULUS=stim_C
+V_V4         D 0   STIMULUS=stim_D
+M_not_B_M2         N06384 B 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_B_M1         N06384 B N01008 N01008 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_C_M2         N06388 C 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_C_M1         N06388 C N01008 N01008 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_D_M2         N06437 D 0 0 nMOS_16nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_D_M1         N06437 D N01008 N01008 pMOS_16nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+.PARAM  n_size_l=30nm p_to_n_ratio=0.975 p_size_w={ p_to_n_ratio * n_size_w }
++  n_size_w=400nm p_size_l={n_size_l} vdd_nominal=0.9
+
+**** RESUMING dcml.cir ****
+.END
+
+* C:\Users\katerina\Desktop\ptyxiaki\projects\xor\16nm\dcml_xor_4_16-PSpiceFiles\DCML_XOR_4_16.stl written on Tue Oct 10 16:39:21 20
+* by Stimulus Editor -- Serial Number: 1920102210 -- Version 16.6.0
+;!Stimulus Get
+;! stim_D Analog stim_C Analog stim_B Analog stim_A Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 16ns
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 100ps
+;!YminRes 100m
+;!Ok
+.STIMULUS stim_D PULSE( 0 900m 0 10p 70p 8n 16n )
+.STIMULUS stim_C PULSE( 0 900m 0 10p 70p 4n 8n )
+.STIMULUS stim_B PULSE( 0 900m 0 10p 70p 2n 4n )
+.STIMULUS stim_A PULSE( 0 900m 0 10p 70p 1n 2n )
+
+**** 10/22/17 15:52:21 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "GATE-dcml"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\dcml\XOR\16nm\dcml_xor_16-pspicefiles\gate\dcml.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               pMOS_16nm_PTM   nMOS_16nm_PTM   
+               PMOS            NMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    5               5            
+           L   30.000000E-09   30.000000E-09 
+           W   30.000000E-09   30.000000E-09 
+         VTO    -.98666          .98666      
+          KP   42.000000E-06   42.000000E-06 
+       GAMMA    1               1            
+         PHI     .7              .7          
+      LAMBDA     .5              .5          
+         RSH    5               5            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO   50.000000E-12   50.000000E-12 
+        CGDO   50.000000E-12   50.000000E-12 
+        CGBO   25.600000E-12   25.600000E-12 
+         TOX  100.000000E-09  100.000000E-09 
+          XJ    7.200000E-09    5.000000E-09 
+       DELTA     .01             .01         
+      DIOMOD    1               1            
+         VFB    -.55            -.55         
+          K1     .4              .4          
+          K2    -.01            0            
+        LETA     .1              .1          
+        WETA     .25             .25         
+          U0    7.500000E-03     .028        
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+        VTH0    -.6862           .68191      
+          K3    0               0            
+        DVT0    1               1            
+        DVT1    2               2            
+          UA    2.000000E-09  600.000000E-12 
+          UB  500.000000E-21    1.200000E-18 
+          UC    0               0            
+        VSAT  195.000000E+03  200.000000E+03 
+        RDSW  220             170            
+        VOFF    -.08            -.1014       
+     NFACTOR    1.8             1.6          
+        CDSC    0               0            
+        PCLM     .12             .02         
+      PDIBL1    1.000000E-03    1.000000E-03 
+      PDIBL2    1.000000E-03    1.000000E-03 
+       DROUT                     .5          
+      PSCBE1  814.000000E+06  814.000000E+06 
+      PSCBE2  958.000000E-09  100.000000E-09 
+          A0    1               1            
+          A1    0               0            
+          A2    1               1            
+         UA1    4.310000E-09    4.310000E-09 
+         UB1    7.610000E-18    7.610000E-18 
+         UC1  -56.000000E-12  -56.000000E-12 
+        PVAG   10.000000E-21   10.000000E-21 
+        KETA                     .04         
+        ETA0    9.500000E-03    9.500000E-03 
+        ETAB    0               0            
+        DVT2                    0            
+        DSUB     .1              .1          
+       NGATE  100.000000E+21  100.000000E+21 
+      MOBMOD    0               0            
+         AGS   10.000000E-21                 
+       DVT1W    0               0            
+       DVT2W    0               0            
+        PRWG    0               0            
+     PDIBLCB   34.000000E-09   -5.000000E-03 
+      ALPHA0     .074            .074        
+        CGSL  265.300000E-12  265.300000E-12 
+        CGDL  265.300000E-12  265.300000E-12 
+        LINT  800.000000E-12                 
+        WINT    5.000000E-09    5.000000E-09 
+    PARAMCHK    1               1            
+     VERSION    4               4            
+      ALPHA1    5.000000E-03    5.000000E-03 
+        TOXM    1.220000E-09    1.200000E-09 
+         TPB    5.000000E-03    5.000000E-03 
+         TCJ    1.000000E-03    1.000000E-03 
+       TPBSW    5.000000E-03    5.000000E-03 
+       TCJSW    1.000000E-03    1.000000E-03 
+      TPBSWG    5.000000E-03    5.000000E-03 
+      TCJSWG    1.000000E-03    1.000000E-03 
+        NOFF     .9              .9          
+      VOFFCV     .02             .02         
+         COX  700.000000E-06  700.000000E-06 
+          E0    1.000000E+12    1.000000E+12 
+    rbodyMod    1               1            
+    rgateMod    1               1            
+      geoMod    1               1            
+      igcMod    1               1            
+      igbMod    1               1            
+        toxe    1.220000E-09    1.200000E-09 
+        toxp  900.000000E-12  900.000000E-12 
+        dtox  320.000000E-12  300.000000E-12 
+        ndep    4.400000E+18    7.000000E+18 
+         nsd  200.000000E+18  200.000000E+18 
+       dvtp0   10.000000E-12   10.000000E-12 
+       dvtp1     .05             .1          
+        lpe0    0               0            
+        minv     .05             .05         
+         rsw   72.5            75            
+         rdw   72.5            75            
+      fprout     .2              .2          
+       pdits     .08             .01         
+      pditsd     .23             .23         
+      pditsl    2.300000E+06    2.300000E+06 
+       agidl  200.000000E-06  200.000000E-06 
+       bgidl    2.100000E+09    2.100000E+09 
+       cgidl  200.000000E-06  200.000000E-06 
+        aigc    9.700000E-03     .015211     
+        bigc    1.250000E-03    2.743200E-03 
+        cigc  800.000000E-06    2.000000E-03 
+       aigsd     .0115           .015211     
+       bigsd    1.250000E-03    2.743200E-03 
+       cigsd  800.000000E-06    2.000000E-03 
+     aigbacc     .012            .012        
+     bigbacc    2.800000E-03    2.800000E-03 
+     cigbacc    2.000000E-03    2.000000E-03 
+     aigbinv     .014            .014        
+     bigbinv    4.000000E-03    4.000000E-03 
+     cigbinv    4.000000E-03    4.000000E-03 
+      xrcrg2    5               5            
+      toxref    1.220000E-09    1.200000E-09 
+    ijthdfwd     .01             .01         
+    ijthsfwd     .01             .01         
+    ijthdrev    1.000000E-03    1.000000E-03 
+    ijthsrev    1.000000E-03    1.000000E-03 
+       gbmin  100.000000E-12  100.000000E-12 
+        rbdb   15              15            
+        rbsb   15              15            
+        rbpb    5               5            
+        rbps   15              15            
+        rbpd   15              15            
+     ckappas     .03             .03         
+     ckappad     .03             .03         
+         dwj    0               0            
+        rshg     .4              .4          
+      CJSWGD  500.000000E-12  500.000000E-12 
+      PBSWGD    1               1            
+      MJSWGD     .33             .33         
+      CJSWGS  300.000000E-12  300.000000E-12 
+      PBSWGS    1               1            
+      MJSWGS     .33             .33         
+        JSWS   10.000000E-12   10.000000E-12 
+       JSWGS  100.000000E-12  100.000000E-12 
+        JSWD   10.000000E-12   10.000000E-12 
+       JSWGD  100.000000E-12  100.000000E-12 
+
+
+**** 10/22/17 15:52:21 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "GATE-dcml"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\dcml\XOR\16nm\dcml_xor_16-pspicefiles\gate\dcml.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)    0.0000  (    B)    0.0000  (    C)    0.0000  (    D)    0.0000      
+
+(  CLK)     .9000  (N00976)     .8413 (N00980)     .7037 (N00984)     .0011     
+
+(N01008)     .9000 (N06280)     .8999 (N06384)     .8999 (N06388)     .8999     
+
+(N06437)     .8999 (N12507)     .8998 (DCML_N12182)     .4430                   
+
+(DCML_N12188)     .0012               (DCML_N12198)     .0819                   
+
+(DCML_N12208)     .0011               (DCML_N12214) 595.4E-06                   
+
+(XOR/XNOR_N00719)     .7037           (XOR/XNOR_N00723)     .8863               
+
+(XOR/XNOR_N00739)     .7037           (XOR/XNOR_N00763)     .7037               
+
+(XOR/XNOR_N00767)     .8570           (XOR/XNOR_N00809)     .8720           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDD       -1.937E-06
+    V_CLK        0.000E+00
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+    V_V3         0.000E+00
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.74E-06  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/22/17 15:52:21 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "GATE-dcml"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\dcml\XOR\16nm\dcml_xor_16-pspicefiles\gate\dcml.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

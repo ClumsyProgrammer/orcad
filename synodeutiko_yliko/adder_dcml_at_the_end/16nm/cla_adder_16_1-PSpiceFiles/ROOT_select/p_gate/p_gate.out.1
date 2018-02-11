@@ -1,0 +1,116 @@
+
+**** 10/23/17 21:36:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT_select-p_gate"  [ C:\Users\katerina\Desktop\ptyxiaki\projects\new_cla_6\adder_16-PSpiceFiles\ROOT_select\p_gate.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "p_gate.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\ROOT_select.net" 
+
+
+
+**** INCLUDING ROOT_select.net ****
+* source ADDER_16
+V_CLOCK_1         CLOCK_1 0  
++PULSE 0 { vdd_nominal } { clock_period / 2 } 10p 10p { clock_period / 2 } {
++  clock_period }
+C_output_S_C14         0 S13  1f  TC=0,0 
+C_output_S_C11         0 S10  1f  TC=0,0 
+C_output_S_C8         0 S7  1f  TC=0,0 
+C_output_S_C5         0 S4  1f  TC=0,0 
+C_output_S_C2         0 S1  1f  TC=0,0 
+C_output_S_C16         0 S15  1f  TC=0,0 
+C_output_S_C13         0 S12  1f  TC=0,0 
+C_output_S_C10         0 S9  1f  TC=0,0 
+C_output_S_C7         0 S6  1f  TC=0,0 
+C_output_S_C4         0 S3  1f  TC=0,0 
+C_output_S_C15         0 S14  1f  TC=0,0 
+C_output_S_C12         0 S11  1f  TC=0,0 
+C_output_S_C9         0 S8  1f  TC=0,0 
+C_output_S_C6         0 S5  1f  TC=0,0 
+C_output_S_C1         0 S0  1f  TC=0,0 
+C_output_S_C3         0 S2  1f  TC=0,0 
+V_V1         VDD 0 { vdd_nominal }
+C_C2         0 C_OUT_NOT  1f  TC=0,0 
+C_C1         0 C_OUT  1f  TC=0,0 
+V_in_A_V1         A0 0   PWL   
++ FILE "stimuli/sel_A0.txt" 
+
+ERROR(ORPSIM-15347): Cannot open input file C:\Users\katerina\Desktop\ptyxiaki\projects\new_cla_6\adder_16-PSpiceFiles\ROOT_select\p_gate\stimuli\sel_A0.txt.
+
+
+ABORTING SIMULATION
+**** 10/23/17 21:36:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT_select-p_gate"  [ C:\Users\katerina\Desktop\ptyxiaki\projects\new_cla_6\adder_16-PSpiceFiles\ROOT_select\p_gate.si
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           1
+  External (NCNODS)                 =          22
+  Total (NUMNOD)                    =           0
+
+Total device count (NUMEL)          =          21
+  Capacitors (C)                    =          18
+  Voltage Sources (V)               =           3
+
+Number of subcircuits (X)           =           0
+
+Matrix statistics:
+  Matrix size (NSTOP)               =           0
+  Initial no. elements (NTTAR)      =           0
+  No. elements w/ fillin (NTTBR)    =           0
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =           0
+  No. LU operations (IOPS)          =           0
+  Percent sparsity (PERSPA)         =       0.000
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               0
+  Readin                            =        0.00
+  General setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        0.00
+  Total job time                    =         .33
+

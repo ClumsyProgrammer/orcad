@@ -1,0 +1,123 @@
+(ExpressProject "ring_45"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\analog.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\ptm_models.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\source.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\capsym.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\special.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "ring_45.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\ring_45-pspicefiles\ring\ring.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ring_45-pspicefiles\ring\simple.sim"
+        (DisplayName "RING-simple")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ring_45-pspicefiles\ring\w_sweep.sim"
+        (DisplayName "RING-w_sweep")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ring_45-pspicefiles\ring\w_sweep.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "C:\Users\katerina\Desktop\ptyxiaki\ptm_library\PTM_Models.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "C:\Users\katerina\Desktop\ptyxiaki\ptm_library\PTM_Models.lib")))
+    (Folder "Stimulus Files"
+      (Sort User)
+      (File ".\ring_45-pspicefiles\ring_45.stl"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\ring_45-pspicefiles\ring_45.stl")))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName
+         "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VPWL
+      (FullPartName "VPWL.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (STIM1
+      (FullPartName "STIM1.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (nMOS_16nm_PTM
+      (FullPartName "nMOS_16nm_PTM.Normal")
+      (LibraryName
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\PTM_MODELS.OLB")
+      (DeviceIndex "0"))
+    (pMOS_16nm_PTM
+      (FullPartName "pMOS_16nm_PTM.Normal")
+      (LibraryName
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\PTM_MODELS.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "katerina")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence2\SPB_16.6\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45.dsn")
+      (Path "Design Resources"
+         "C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45.dsn"
+         "RING")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 554"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 104 1063 104 356")
+        (Scroll "-30 396")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\RING_OSCILLATOR\45NM\RING_45.DSN")
+      (Schematic "RING")
+      (Page "PAGE1"))))

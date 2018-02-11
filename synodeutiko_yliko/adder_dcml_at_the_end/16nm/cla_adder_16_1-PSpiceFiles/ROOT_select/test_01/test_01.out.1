@@ -1,0 +1,3926 @@
+
+**** 10/23/17 10:25:53 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT_select-test_01"  [ C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\new_cla_6\adder_16-pspicefiles\root_select\test_01.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test_01.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\ROOT_select.net" 
+
+
+
+**** INCLUDING ROOT_select.net ****
+* source ADDER_16
+V_CLOCK_1         CLOCK_1 0  
++PULSE 0 { vdd_nominal } { clock_period / 2 } 10p 10p { clock_period / 2 } {
++  clock_period }
+C_output_S_C14         0 S13  1f  TC=0,0 
+C_output_S_C11         0 S10  1f  TC=0,0 
+C_output_S_C8         0 S7  1f  TC=0,0 
+C_output_S_C5         0 S4  1f  TC=0,0 
+C_output_S_C2         0 S1  1f  TC=0,0 
+C_output_S_C16         0 S15  1f  TC=0,0 
+C_output_S_C13         0 S12  1f  TC=0,0 
+C_output_S_C10         0 S9  1f  TC=0,0 
+C_output_S_C7         0 S6  1f  TC=0,0 
+C_output_S_C4         0 S3  1f  TC=0,0 
+C_output_S_C15         0 S14  1f  TC=0,0 
+C_output_S_C12         0 S11  1f  TC=0,0 
+C_output_S_C9         0 S8  1f  TC=0,0 
+C_output_S_C6         0 S5  1f  TC=0,0 
+C_output_S_C1         0 S0  1f  TC=0,0 
+C_output_S_C3         0 S2  1f  TC=0,0 
+V_V1         VDD 0 { vdd_nominal }
+C_C2         0 C_OUT_NOT  1f  TC=0,0 
+C_C1         0 C_OUT  1f  TC=0,0 
+V_in_A_V1         A0 0   PWL   
++ FILE "stimuli/sel_A0.txt" 
+V_in_A_V2         A1 0   PWL   
++ FILE "stimuli/sel_A1.txt" 
+V_in_A_V3         A2 0   PWL   
++ FILE "stimuli/sel_A2.txt" 
+V_in_A_V4         A3 0   PWL   
++ FILE "stimuli/sel_A3.txt" 
+V_in_A_V5         A4 0   PWL   
++ FILE "stimuli/sel_A4.txt" 
+V_in_A_V6         A5 0   PWL   
++ FILE "stimuli/sel_A5.txt" 
+V_in_A_V7         A6 0   PWL   
++ FILE "stimuli/sel_A6.txt" 
+V_in_A_V8         A7 0   PWL   
++ FILE "stimuli/sel_A7.txt" 
+V_in_A_V9         A8 0   PWL   
++ FILE "stimuli/sel_A8.txt" 
+V_in_A_V10         A9 0   PWL   
++ FILE "stimuli/sel_A9.txt" 
+V_in_A_V11         A10 0   PWL   
++ FILE "stimuli/sel_A10.txt" 
+V_in_A_V12         A11 0   PWL   
++ FILE "stimuli/sel_A11.txt" 
+V_in_A_V13         A12 0   PWL   
++ FILE "stimuli/sel_A12.txt" 
+V_in_A_V14         A13 0   PWL   
++ FILE "stimuli/sel_A13.txt" 
+V_in_A_V15         A14 0   PWL   
++ FILE "stimuli/sel_A14.txt" 
+V_in_A_V16         A15 0   PWL   
++ FILE "stimuli/sel_A15.txt" 
+C_output_SB_C2         0 SB1  1f  TC=0,0 
+C_output_SB_C1         0 SB0  1f  TC=0,0 
+C_output_SB_C16         0 SB15  1f  TC=0,0 
+C_output_SB_C15         0 SB14  1f  TC=0,0 
+C_output_SB_C14         0 SB13  1f  TC=0,0 
+C_output_SB_C13         0 SB12  1f  TC=0,0 
+C_output_SB_C12         0 SB11  1f  TC=0,0 
+C_output_SB_C11         0 SB10  1f  TC=0,0 
+C_output_SB_C10         0 SB9  1f  TC=0,0 
+C_output_SB_C9         0 SB8  1f  TC=0,0 
+C_output_SB_C8         0 SB7  1f  TC=0,0 
+C_output_SB_C7         0 SB6  1f  TC=0,0 
+C_output_SB_C6         0 SB5  1f  TC=0,0 
+C_output_SB_C5         0 SB4  1f  TC=0,0 
+C_output_SB_C4         0 SB3  1f  TC=0,0 
+C_output_SB_C3         0 SB2  1f  TC=0,0 
+V_in_B_V1         B0 0   PWL   
++ FILE "stimuli/sel_B0.txt" 
+V_in_B_V2         B1 0   PWL   
++ FILE "stimuli/sel_B1.txt" 
+V_in_B_V3         B2 0   PWL   
++ FILE "stimuli/sel_B2.txt" 
+V_in_B_V4         B3 0   PWL   
++ FILE "stimuli/sel_B3.txt" 
+V_in_B_V5         B4 0   PWL   
++ FILE "stimuli/sel_B4.txt" 
+V_in_B_V6         B5 0   PWL   
++ FILE "stimuli/sel_B5.txt" 
+V_in_B_V7         B6 0   PWL   
++ FILE "stimuli/sel_B6.txt" 
+V_in_B_V8         B7 0   PWL   
++ FILE "stimuli/sel_B7.txt" 
+V_in_B_V9         B8 0   PWL   
++ FILE "stimuli/sel_B8.txt" 
+V_in_B_V10         B9 0   PWL   
++ FILE "stimuli/sel_B9.txt" 
+V_in_B_V11         B10 0   PWL   
++ FILE "stimuli/sel_B10.txt" 
+V_in_B_V12         B11 0   PWL   
++ FILE "stimuli/sel_B11.txt" 
+V_in_B_V13         B12 0   PWL   
++ FILE "stimuli/sel_B12.txt" 
+V_in_B_V14         B13 0   PWL   
++ FILE "stimuli/sel_B13.txt" 
+V_in_B_V15         B14 0   PWL   
++ FILE "stimuli/sel_B14.txt" 
+V_in_B_V16         B15 0   PWL   
++ FILE "stimuli/sel_B15.txt" 
+M_adder_not_A15_M1         adder_N10280 A15 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A15_M2         adder_N10280 A15 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A6_M1         A6 A6 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A6_M2         A6 A6 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A13_M1         A13 A13 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A13_M2         A13 A13 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A4_M1         adder_N05437 A4 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A4_M2         adder_N05437 A4 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B15_M1         B15 B15 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B15_M2         B15 B15 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B6_M1         adder_N05325 B6 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B6_M2         adder_N05325 B6 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_block_carry_C3_Co_DIFF_NET_M2        
++  adder_block_3_block_carry_C3_Co_DIFF_NET_N00302 adder_block_3_N02116 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C3_Co_DIFF_NET_M5         adder_block_3_N01621
++  adder_block_3_N01614 adder_block_3_block_carry_C3_Co_DIFF_NET_N00314
++  adder_block_3_block_carry_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C3_Co_DIFF_NET_M3        
++  adder_block_3_block_carry_C3_Co_DIFF_NET_N00314 adder_block_3_N02116
++  adder_block_3_block_carry_C3_Co_DIFF_NET_N00302
++  adder_block_3_block_carry_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C3_Co_DIFF_NET_M6         adder_block_3_N01628
++  adder_block_3_N01607 adder_block_3_block_carry_C3_Co_DIFF_NET_N00314
++  adder_block_3_block_carry_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C3_Co_DIFF_NET_M1         adder_block_3_N01621
++  adder_block_3_N02154 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C3_Co_DIFF_NET_M4         adder_block_3_N01628
++  adder_block_3_N02112 adder_block_3_block_carry_C3_Co_DIFF_NET_N00302
++  adder_block_3_block_carry_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C1_Co_DIFF_NET_M2        
++  adder_block_3_block_carry_C1_Co_DIFF_NET_N00302 adder_block_3_N02088 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C1_Co_DIFF_NET_M5         adder_block_3_N01593
++  adder_N63386 adder_block_3_block_carry_C1_Co_DIFF_NET_N00314
++  adder_block_3_block_carry_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C1_Co_DIFF_NET_M3        
++  adder_block_3_block_carry_C1_Co_DIFF_NET_N00314 adder_block_3_N02084
++  adder_block_3_block_carry_C1_Co_DIFF_NET_N00302
++  adder_block_3_block_carry_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C1_Co_DIFF_NET_M6         adder_block_3_N01600
++  adder_N63382 adder_block_3_block_carry_C1_Co_DIFF_NET_N00314
++  adder_block_3_block_carry_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C1_Co_DIFF_NET_M1         adder_block_3_N01593
++  adder_block_3_N02092 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C1_Co_DIFF_NET_M4         adder_block_3_N01600
++  adder_block_3_N02080 adder_block_3_block_carry_C1_Co_DIFF_NET_N00302
++  adder_block_3_block_carry_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C2_Co_DIFF_NET_M2        
++  adder_block_3_block_carry_C2_Co_DIFF_NET_N00302 adder_block_3_N02104 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C2_Co_DIFF_NET_M5         adder_block_3_N01607
++  adder_block_3_N01600 adder_block_3_block_carry_C2_Co_DIFF_NET_N00314
++  adder_block_3_block_carry_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C2_Co_DIFF_NET_M3        
++  adder_block_3_block_carry_C2_Co_DIFF_NET_N00314 adder_block_3_N02100
++  adder_block_3_block_carry_C2_Co_DIFF_NET_N00302
++  adder_block_3_block_carry_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C2_Co_DIFF_NET_M6         adder_block_3_N01614
++  adder_block_3_N01593 adder_block_3_block_carry_C2_Co_DIFF_NET_N00314
++  adder_block_3_block_carry_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C2_Co_DIFF_NET_M1         adder_block_3_N01607
++  adder_block_3_N02108 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C2_Co_DIFF_NET_M4         adder_block_3_N01614
++  adder_block_3_N02096 adder_block_3_block_carry_C2_Co_DIFF_NET_N00302
++  adder_block_3_block_carry_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C4_Co_DIFF_NET_M2        
++  adder_block_3_block_carry_C4_Co_DIFF_NET_N00302 adder_block_3_N02166 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C4_Co_DIFF_NET_M5         adder_N10512
++  adder_block_3_N01628 adder_block_3_block_carry_C4_Co_DIFF_NET_N00314
++  adder_block_3_block_carry_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C4_Co_DIFF_NET_M3        
++  adder_block_3_block_carry_C4_Co_DIFF_NET_N00314 adder_block_3_N02162
++  adder_block_3_block_carry_C4_Co_DIFF_NET_N00302
++  adder_block_3_block_carry_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C4_Co_DIFF_NET_M6         adder_N10516
++  adder_block_3_N01621 adder_block_3_block_carry_C4_Co_DIFF_NET_N00314
++  adder_block_3_block_carry_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C4_Co_DIFF_NET_M1         adder_N10512
++  adder_block_3_N02170 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_C4_Co_DIFF_NET_M4         adder_N10516
++  adder_block_3_N02158 adder_block_3_block_carry_C4_Co_DIFF_NET_N00302
++  adder_block_3_block_carry_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M5         adder_N61653
++  adder_block_3_N02154 adder_block_3_block_carry_group_G_GG_DIFF_NET_N01677
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M4         adder_N61657
++  adder_block_3_N02158 adder_block_3_block_carry_group_G_GG_DIFF_NET_N01001
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M1         adder_N61653
++  adder_block_3_N02170 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M3        
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N01677 adder_block_3_N02162
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N01001
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M8         adder_N61657
++  adder_block_3_N02112 adder_block_3_block_carry_group_G_GG_DIFF_NET_N02525
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M7        
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_BREAK_1 adder_block_3_N02116
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N02525
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M6        
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N02525 adder_block_3_N02116
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N01677
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M2        
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N01001 adder_block_3_N02166 VDD
++  VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M10        
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N02967 adder_block_3_N02104
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_BREAK_1
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M14         adder_N61657
++  adder_block_3_N02088 adder_block_3_block_carry_group_G_GG_DIFF_NET_N03001
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M9         adder_N61653
++  adder_block_3_N02108 adder_block_3_block_carry_group_G_GG_DIFF_NET_BREAK_1
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M13         adder_N61653
++  adder_block_3_N02092 adder_block_3_block_carry_group_G_GG_DIFF_NET_N03001
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M12         adder_N61657
++  adder_block_3_N02096 adder_block_3_block_carry_group_G_GG_DIFF_NET_N02967
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_G_GG_DIFF_NET_M11        
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N03001 adder_block_3_N02100
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N02967
++  adder_block_3_block_carry_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_P_PG_DIFF_NET_M8         adder_N61645
++  adder_block_3_N02084 adder_block_3_block_carry_group_P_PG_DIFF_NET_N03885
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_P_PG_DIFF_NET_M2        
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N02033 adder_block_3_N02084 VDD
++  VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_P_PG_DIFF_NET_M7         adder_N61649
++  adder_block_3_N02080 adder_block_3_block_carry_group_P_PG_DIFF_NET_N03885
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_P_PG_DIFF_NET_M4        
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N03861 adder_block_3_N02084
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N02033
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_P_PG_DIFF_NET_M1         adder_N61649
++  adder_block_3_N02080 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_P_PG_DIFF_NET_M3         adder_N61649
++  adder_block_3_N02080 adder_block_3_block_carry_group_P_PG_DIFF_NET_N02033
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_P_PG_DIFF_NET_M6        
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N03885 adder_block_3_N02084
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N03861
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_block_carry_group_P_PG_DIFF_NET_M5         adder_N61649
++  adder_block_3_N02080 adder_block_3_block_carry_group_P_PG_DIFF_NET_N03861
++  adder_block_3_block_carry_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_S_DIFF_NET_M2        
++  adder_block_3_digit2_S_S_DIFF_NET_N00298 adder_block_3_N01607 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_S_DIFF_NET_M5         adder_block_3_digit2_S_N00086
++  adder_block_3_N02116 adder_block_3_digit2_S_S_DIFF_NET_N00298
++  adder_block_3_digit2_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_S_DIFF_NET_M3         adder_block_3_digit2_S_N00090
++  adder_block_3_N02116 adder_block_3_digit2_S_S_DIFF_NET_N00294
++  adder_block_3_digit2_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_S_DIFF_NET_M1        
++  adder_block_3_digit2_S_S_DIFF_NET_N00294 adder_block_3_N01614 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_S_DIFF_NET_M6         adder_block_3_digit2_S_N00090
++  adder_block_3_N02112 adder_block_3_digit2_S_S_DIFF_NET_N00298
++  adder_block_3_digit2_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_S_DIFF_NET_M4         adder_block_3_digit2_S_N00086
++  adder_block_3_N02112 adder_block_3_digit2_S_S_DIFF_NET_N00294
++  adder_block_3_digit2_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_DCML_M4         SB14 S14
++  adder_block_3_digit2_S_DCML_N00757 adder_block_3_digit2_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M9         S14 SB14
++  adder_block_3_digit2_S_DCML_N00714 adder_block_3_digit2_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M14         adder_block_3_digit2_S_DCML_N00753
++  adder_block_3_digit2_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M2         SB14 S14 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_DCML_M7         SB14 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_DCML_M12         adder_block_3_digit2_S_DCML_N00710
++  adder_block_3_digit2_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M5         adder_block_3_digit2_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M10         SB14 S14
++  adder_block_3_digit2_S_DCML_N00753 adder_block_3_digit2_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M15         adder_block_3_digit2_S_DCML_N00745
++  adder_block_3_digit2_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M3         S14 SB14
++  adder_block_3_digit2_S_DCML_N00757 adder_block_3_digit2_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M8         adder_block_3_digit2_S_N00090 S14
++  adder_block_3_digit2_S_DCML_N00710 adder_block_3_digit2_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M13         adder_block_3_digit2_S_DCML_N00714
++  adder_block_3_digit2_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_S_DCML_M1         S14 SB14 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_DCML_M6         S14 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_S_DCML_M11         adder_block_3_digit2_S_N00086 SB14
++  adder_block_3_digit2_S_DCML_N00745 adder_block_3_digit2_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit2_P_P_DIFF_NET_M4         adder_block_3_N02112 B14
++  adder_block_3_digit2_P_P_DIFF_NET_N00761
++  adder_block_3_digit2_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_P_P_DIFF_NET_M6         adder_block_3_N02116 B14
++  adder_block_3_digit2_P_P_DIFF_NET_N00765
++  adder_block_3_digit2_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_P_P_DIFF_NET_M1        
++  adder_block_3_digit2_P_P_DIFF_NET_N00761 A14 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_P_P_DIFF_NET_M3         adder_block_3_N02116
++  adder_N10196 adder_block_3_digit2_P_P_DIFF_NET_N00761
++  adder_block_3_digit2_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_P_P_DIFF_NET_M5         adder_block_3_N02112
++  adder_N10196 adder_block_3_digit2_P_P_DIFF_NET_N00765
++  adder_block_3_digit2_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_P_P_DIFF_NET_M2        
++  adder_block_3_digit2_P_P_DIFF_NET_N00765 A14 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_G_G_DIFF_NET_M2        
++  adder_block_3_digit2_G_G_DIFF_NET_N01214 A14 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_G_G_DIFF_NET_M4         adder_block_3_N02154 B14
++  adder_block_3_digit2_G_G_DIFF_NET_N01210
++  adder_block_3_digit2_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_G_G_DIFF_NET_M6         adder_block_3_N02154 B14
++  adder_block_3_digit2_G_G_DIFF_NET_N01214
++  adder_block_3_digit2_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_G_G_DIFF_NET_M1        
++  adder_block_3_digit2_G_G_DIFF_NET_N01210 A14 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_G_G_DIFF_NET_M3         adder_block_3_N02116
++  adder_N10196 adder_block_3_digit2_G_G_DIFF_NET_N01210
++  adder_block_3_digit2_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit2_G_G_DIFF_NET_M5         adder_block_3_N02154
++  adder_N10196 adder_block_3_digit2_G_G_DIFF_NET_N01214
++  adder_block_3_digit2_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_S_DIFF_NET_M2        
++  adder_block_3_digit1_S_S_DIFF_NET_N00298 adder_block_3_N01593 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_S_DIFF_NET_M5         adder_block_3_digit1_S_N00086
++  adder_block_3_N02100 adder_block_3_digit1_S_S_DIFF_NET_N00298
++  adder_block_3_digit1_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_S_DIFF_NET_M3         adder_block_3_digit1_S_N00090
++  adder_block_3_N02100 adder_block_3_digit1_S_S_DIFF_NET_N00294
++  adder_block_3_digit1_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_S_DIFF_NET_M1        
++  adder_block_3_digit1_S_S_DIFF_NET_N00294 adder_block_3_N01600 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_S_DIFF_NET_M6         adder_block_3_digit1_S_N00090
++  adder_block_3_N02096 adder_block_3_digit1_S_S_DIFF_NET_N00298
++  adder_block_3_digit1_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_S_DIFF_NET_M4         adder_block_3_digit1_S_N00086
++  adder_block_3_N02096 adder_block_3_digit1_S_S_DIFF_NET_N00294
++  adder_block_3_digit1_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_DCML_M4         SB13 S13
++  adder_block_3_digit1_S_DCML_N00757 adder_block_3_digit1_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M9         S13 SB13
++  adder_block_3_digit1_S_DCML_N00714 adder_block_3_digit1_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M14         adder_block_3_digit1_S_DCML_N00753
++  adder_block_3_digit1_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M2         SB13 S13 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_DCML_M7         SB13 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_DCML_M12         adder_block_3_digit1_S_DCML_N00710
++  adder_block_3_digit1_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M5         adder_block_3_digit1_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M10         SB13 S13
++  adder_block_3_digit1_S_DCML_N00753 adder_block_3_digit1_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M15         adder_block_3_digit1_S_DCML_N00745
++  adder_block_3_digit1_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M3         S13 SB13
++  adder_block_3_digit1_S_DCML_N00757 adder_block_3_digit1_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M8         adder_block_3_digit1_S_N00090 S13
++  adder_block_3_digit1_S_DCML_N00710 adder_block_3_digit1_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M13         adder_block_3_digit1_S_DCML_N00714
++  adder_block_3_digit1_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_S_DCML_M1         S13 SB13 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_DCML_M6         S13 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_S_DCML_M11         adder_block_3_digit1_S_N00086 SB13
++  adder_block_3_digit1_S_DCML_N00745 adder_block_3_digit1_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit1_P_P_DIFF_NET_M4         adder_block_3_N02096 B13
++  adder_block_3_digit1_P_P_DIFF_NET_N00761
++  adder_block_3_digit1_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_P_P_DIFF_NET_M6         adder_block_3_N02100 B13
++  adder_block_3_digit1_P_P_DIFF_NET_N00765
++  adder_block_3_digit1_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_P_P_DIFF_NET_M1        
++  adder_block_3_digit1_P_P_DIFF_NET_N00761 A13 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_P_P_DIFF_NET_M3         adder_block_3_N02100
++  adder_N10208 adder_block_3_digit1_P_P_DIFF_NET_N00761
++  adder_block_3_digit1_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_P_P_DIFF_NET_M5         adder_block_3_N02096
++  adder_N10208 adder_block_3_digit1_P_P_DIFF_NET_N00765
++  adder_block_3_digit1_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_P_P_DIFF_NET_M2        
++  adder_block_3_digit1_P_P_DIFF_NET_N00765 A13 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_G_G_DIFF_NET_M2        
++  adder_block_3_digit1_G_G_DIFF_NET_N01214 A13 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_G_G_DIFF_NET_M4         adder_block_3_N02108 B13
++  adder_block_3_digit1_G_G_DIFF_NET_N01210
++  adder_block_3_digit1_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_G_G_DIFF_NET_M6         adder_block_3_N02108 B13
++  adder_block_3_digit1_G_G_DIFF_NET_N01214
++  adder_block_3_digit1_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_G_G_DIFF_NET_M1        
++  adder_block_3_digit1_G_G_DIFF_NET_N01210 A13 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_G_G_DIFF_NET_M3         adder_block_3_N02104
++  adder_N10208 adder_block_3_digit1_G_G_DIFF_NET_N01210
++  adder_block_3_digit1_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit1_G_G_DIFF_NET_M5         adder_block_3_N02108
++  adder_N10208 adder_block_3_digit1_G_G_DIFF_NET_N01214
++  adder_block_3_digit1_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_S_DIFF_NET_M2        
++  adder_block_3_digit3_S_S_DIFF_NET_N00298 adder_block_3_N01621 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_S_DIFF_NET_M5         adder_block_3_digit3_S_N00086
++  adder_block_3_N02162 adder_block_3_digit3_S_S_DIFF_NET_N00298
++  adder_block_3_digit3_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_S_DIFF_NET_M3         adder_block_3_digit3_S_N00090
++  adder_block_3_N02162 adder_block_3_digit3_S_S_DIFF_NET_N00294
++  adder_block_3_digit3_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_S_DIFF_NET_M1        
++  adder_block_3_digit3_S_S_DIFF_NET_N00294 adder_block_3_N01628 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_S_DIFF_NET_M6         adder_block_3_digit3_S_N00090
++  adder_block_3_N02158 adder_block_3_digit3_S_S_DIFF_NET_N00298
++  adder_block_3_digit3_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_S_DIFF_NET_M4         adder_block_3_digit3_S_N00086
++  adder_block_3_N02158 adder_block_3_digit3_S_S_DIFF_NET_N00294
++  adder_block_3_digit3_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_DCML_M4         SB15 S15
++  adder_block_3_digit3_S_DCML_N00757 adder_block_3_digit3_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M9         S15 SB15
++  adder_block_3_digit3_S_DCML_N00714 adder_block_3_digit3_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M14         adder_block_3_digit3_S_DCML_N00753
++  adder_block_3_digit3_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M2         SB15 S15 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_DCML_M7         SB15 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_DCML_M12         adder_block_3_digit3_S_DCML_N00710
++  adder_block_3_digit3_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M5         adder_block_3_digit3_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M10         SB15 S15
++  adder_block_3_digit3_S_DCML_N00753 adder_block_3_digit3_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M15         adder_block_3_digit3_S_DCML_N00745
++  adder_block_3_digit3_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M3         S15 SB15
++  adder_block_3_digit3_S_DCML_N00757 adder_block_3_digit3_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M8         adder_block_3_digit3_S_N00090 S15
++  adder_block_3_digit3_S_DCML_N00710 adder_block_3_digit3_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M13         adder_block_3_digit3_S_DCML_N00714
++  adder_block_3_digit3_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_S_DCML_M1         S15 SB15 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_DCML_M6         S15 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_S_DCML_M11         adder_block_3_digit3_S_N00086 SB15
++  adder_block_3_digit3_S_DCML_N00745 adder_block_3_digit3_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit3_P_P_DIFF_NET_M4         adder_block_3_N02158 B15
++  adder_block_3_digit3_P_P_DIFF_NET_N00761
++  adder_block_3_digit3_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_P_P_DIFF_NET_M6         adder_block_3_N02162 B15
++  adder_block_3_digit3_P_P_DIFF_NET_N00765
++  adder_block_3_digit3_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_P_P_DIFF_NET_M1        
++  adder_block_3_digit3_P_P_DIFF_NET_N00761 adder_N10280 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_P_P_DIFF_NET_M3         adder_block_3_N02162 B15
++  adder_block_3_digit3_P_P_DIFF_NET_N00761
++  adder_block_3_digit3_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_P_P_DIFF_NET_M5         adder_block_3_N02158 B15
++  adder_block_3_digit3_P_P_DIFF_NET_N00765
++  adder_block_3_digit3_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_P_P_DIFF_NET_M2        
++  adder_block_3_digit3_P_P_DIFF_NET_N00765 A15 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_G_G_DIFF_NET_M2        
++  adder_block_3_digit3_G_G_DIFF_NET_N01214 A15 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_G_G_DIFF_NET_M4         adder_block_3_N02170 B15
++  adder_block_3_digit3_G_G_DIFF_NET_N01210
++  adder_block_3_digit3_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_G_G_DIFF_NET_M6         adder_block_3_N02170 B15
++  adder_block_3_digit3_G_G_DIFF_NET_N01214
++  adder_block_3_digit3_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_G_G_DIFF_NET_M1        
++  adder_block_3_digit3_G_G_DIFF_NET_N01210 adder_N10280 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_G_G_DIFF_NET_M3         adder_block_3_N02166 B15
++  adder_block_3_digit3_G_G_DIFF_NET_N01210
++  adder_block_3_digit3_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit3_G_G_DIFF_NET_M5         adder_block_3_N02170 B15
++  adder_block_3_digit3_G_G_DIFF_NET_N01214
++  adder_block_3_digit3_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_S_DIFF_NET_M2        
++  adder_block_3_digit0_S_S_DIFF_NET_N00298 adder_N63382 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_S_DIFF_NET_M5         adder_block_3_digit0_S_N00086
++  adder_block_3_N02084 adder_block_3_digit0_S_S_DIFF_NET_N00298
++  adder_block_3_digit0_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_S_DIFF_NET_M3         adder_block_3_digit0_S_N00090
++  adder_block_3_N02084 adder_block_3_digit0_S_S_DIFF_NET_N00294
++  adder_block_3_digit0_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_S_DIFF_NET_M1        
++  adder_block_3_digit0_S_S_DIFF_NET_N00294 adder_N63386 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_S_DIFF_NET_M6         adder_block_3_digit0_S_N00090
++  adder_block_3_N02080 adder_block_3_digit0_S_S_DIFF_NET_N00298
++  adder_block_3_digit0_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_S_DIFF_NET_M4         adder_block_3_digit0_S_N00086
++  adder_block_3_N02080 adder_block_3_digit0_S_S_DIFF_NET_N00294
++  adder_block_3_digit0_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_DCML_M4         SB12 S12
++  adder_block_3_digit0_S_DCML_N00757 adder_block_3_digit0_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M9         S12 SB12
++  adder_block_3_digit0_S_DCML_N00714 adder_block_3_digit0_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M14         adder_block_3_digit0_S_DCML_N00753
++  adder_block_3_digit0_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M2         SB12 S12 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_DCML_M7         SB12 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_DCML_M12         adder_block_3_digit0_S_DCML_N00710
++  adder_block_3_digit0_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M5         adder_block_3_digit0_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M10         SB12 S12
++  adder_block_3_digit0_S_DCML_N00753 adder_block_3_digit0_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M15         adder_block_3_digit0_S_DCML_N00745
++  adder_block_3_digit0_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M3         S12 SB12
++  adder_block_3_digit0_S_DCML_N00757 adder_block_3_digit0_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M8         adder_block_3_digit0_S_N00090 S12
++  adder_block_3_digit0_S_DCML_N00710 adder_block_3_digit0_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M13         adder_block_3_digit0_S_DCML_N00714
++  adder_block_3_digit0_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_S_DCML_M1         S12 SB12 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_DCML_M6         S12 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_S_DCML_M11         adder_block_3_digit0_S_N00086 SB12
++  adder_block_3_digit0_S_DCML_N00745 adder_block_3_digit0_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_3_digit0_P_P_DIFF_NET_M4         adder_block_3_N02080 B12
++  adder_block_3_digit0_P_P_DIFF_NET_N00761
++  adder_block_3_digit0_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_P_P_DIFF_NET_M6         adder_block_3_N02084 B12
++  adder_block_3_digit0_P_P_DIFF_NET_N00765
++  adder_block_3_digit0_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_P_P_DIFF_NET_M1        
++  adder_block_3_digit0_P_P_DIFF_NET_N00761 adder_N10308 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_P_P_DIFF_NET_M3         adder_block_3_N02084
++  adder_N10220 adder_block_3_digit0_P_P_DIFF_NET_N00761
++  adder_block_3_digit0_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_P_P_DIFF_NET_M5         adder_block_3_N02080
++  adder_N10220 adder_block_3_digit0_P_P_DIFF_NET_N00765
++  adder_block_3_digit0_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_P_P_DIFF_NET_M2        
++  adder_block_3_digit0_P_P_DIFF_NET_N00765 A12 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_G_G_DIFF_NET_M2        
++  adder_block_3_digit0_G_G_DIFF_NET_N01214 A12 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_G_G_DIFF_NET_M4         adder_block_3_N02092 B12
++  adder_block_3_digit0_G_G_DIFF_NET_N01210
++  adder_block_3_digit0_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_G_G_DIFF_NET_M6         adder_block_3_N02092 B12
++  adder_block_3_digit0_G_G_DIFF_NET_N01214
++  adder_block_3_digit0_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_G_G_DIFF_NET_M1        
++  adder_block_3_digit0_G_G_DIFF_NET_N01210 adder_N10308 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_G_G_DIFF_NET_M3         adder_block_3_N02088
++  adder_N10220 adder_block_3_digit0_G_G_DIFF_NET_N01210
++  adder_block_3_digit0_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_3_digit0_G_G_DIFF_NET_M5         adder_block_3_N02092
++  adder_N10220 adder_block_3_digit0_G_G_DIFF_NET_N01214
++  adder_block_3_digit0_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A2_M1         A2 A2 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A2_M2         A2 A2 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B13_M1         adder_N10208 B13 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B13_M2         adder_N10208 B13 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B4_M1         adder_N05349 B4 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B4_M2         adder_N05349 B4 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A0_M1         adder_N03638 A0 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A0_M2         adder_N03638 A0 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A10_M1         A10 A10 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A10_M2         A10 A10 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B2_M1         adder_N03526 B2 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B2_M2         adder_N03526 B2 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A8_M1         adder_N07311 A8 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A8_M2         adder_N07311 A8 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B10_M1         adder_N07199 B10 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B10_M2         adder_N07199 B10 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B0_M1         adder_N03550 B0 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B0_M2         adder_N03550 B0 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B8_M1         adder_N07223 B8 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B8_M2         adder_N07223 B8 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A7_M1         adder_N05409 A7 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A7_M2         adder_N05409 A7 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A14_M1         A14 A14 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A14_M2         A14 A14 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A5_M1         A5 A5 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A5_M2         A5 A5 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A12_M1         adder_N10308 A12 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A12_M2         adder_N10308 A12 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B7_M1         B7 B7 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B7_M2         B7 B7 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_M2        
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00302 adder_N61605 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_M5         adder_N63382 adder_N63340
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00314
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_M3        
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00314 adder_N61601
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00302
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_M6         adder_N63386 adder_N63325
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00314
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_M1         adder_N63382 adder_N61609
++  VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_M4         adder_N63386 adder_N61597
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00302
++  adder_LEVEL_2_CARRY_UNIT_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_M2        
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00302 adder_N56337 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_M5         adder_N63358 VDD
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00314
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_M3        
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00314 adder_N56333
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00302
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_M6         adder_N63362 0
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00314
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_M1         adder_N63358 adder_N56341
++  VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_M4         adder_N63362 adder_N56025
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00302
++  adder_LEVEL_2_CARRY_UNIT_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_M2        
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00302 adder_N62329 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_M5         adder_N63325 adder_N63362
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00314
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_M3        
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00314 adder_N62325
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00302
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_M6         adder_N63340 adder_N63358
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00314
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_M1         adder_N63325 adder_N62333
++  VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_M4         adder_N63340 adder_N62321
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00302
++  adder_LEVEL_2_CARRY_UNIT_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_M2        
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00302 adder_N61653 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_M5         adder_N65825 adder_N63386
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00314
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_M3        
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00314 adder_N61649
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00302
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_M6         adder_N65829 adder_N63382
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00314
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_M1         adder_N65825 adder_N61657
++  VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_M4         adder_N65829 adder_N61645
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00302
++  adder_LEVEL_2_CARRY_UNIT_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M5         N13232 adder_N61609
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01677
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M4         N13228 adder_N61645
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01001
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M1         N13232 adder_N61657
++  VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M3        
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01677 adder_N61649
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01001
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M8         N13228 adder_N61597
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02525
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M7        
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_BREAK_1 adder_N61601
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02525
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M6        
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02525 adder_N61605
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01677
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M2        
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N01001 adder_N61653 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M10        
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02967 adder_N62329
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_BREAK_1
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M14         N13228 adder_N56337
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N03001
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M9         N13232 adder_N62333
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_BREAK_1
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M13         N13232 adder_N56341
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N03001
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M12         N13228 adder_N62321
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02967
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_M11        
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N03001 adder_N62325
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02967
++  adder_LEVEL_2_CARRY_UNIT_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_M8         N13240 adder_N56333
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03885
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_M2        
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N02033 adder_N56333 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_M7         N13236 adder_N56025
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03885
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_M4        
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03861 adder_N56333
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N02033
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_M1         N13236 adder_N56025
++  VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_M3         N13236 adder_N56025
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N02033
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_M6        
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03885 adder_N56333
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03861
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_M5         N13236 adder_N56025
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03861
++  adder_LEVEL_2_CARRY_UNIT_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A3_M1         adder_N03610 A3 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A3_M2         adder_N03610 A3 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B14_M1         adder_N10196 B14 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B14_M2         adder_N10196 B14 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B5_M1         adder_N05337 B5 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B5_M2         adder_N05337 B5 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_block_carry_C3_Co_DIFF_NET_M2        
++  adder_block_1_block_carry_C3_Co_DIFF_NET_N00302 adder_block_1_N02116 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C3_Co_DIFF_NET_M5         adder_block_1_N01621
++  adder_block_1_N01614 adder_block_1_block_carry_C3_Co_DIFF_NET_N00314
++  adder_block_1_block_carry_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C3_Co_DIFF_NET_M3        
++  adder_block_1_block_carry_C3_Co_DIFF_NET_N00314 adder_block_1_N02116
++  adder_block_1_block_carry_C3_Co_DIFF_NET_N00302
++  adder_block_1_block_carry_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C3_Co_DIFF_NET_M6         adder_block_1_N01628
++  adder_block_1_N01607 adder_block_1_block_carry_C3_Co_DIFF_NET_N00314
++  adder_block_1_block_carry_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C3_Co_DIFF_NET_M1         adder_block_1_N01621
++  adder_block_1_N02154 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C3_Co_DIFF_NET_M4         adder_block_1_N01628
++  adder_block_1_N02112 adder_block_1_block_carry_C3_Co_DIFF_NET_N00302
++  adder_block_1_block_carry_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C1_Co_DIFF_NET_M2        
++  adder_block_1_block_carry_C1_Co_DIFF_NET_N00302 adder_block_1_N02088 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C1_Co_DIFF_NET_M5         adder_block_1_N01593
++  adder_N63362 adder_block_1_block_carry_C1_Co_DIFF_NET_N00314
++  adder_block_1_block_carry_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C1_Co_DIFF_NET_M3        
++  adder_block_1_block_carry_C1_Co_DIFF_NET_N00314 adder_block_1_N02084
++  adder_block_1_block_carry_C1_Co_DIFF_NET_N00302
++  adder_block_1_block_carry_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C1_Co_DIFF_NET_M6         adder_block_1_N01600
++  adder_N63358 adder_block_1_block_carry_C1_Co_DIFF_NET_N00314
++  adder_block_1_block_carry_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C1_Co_DIFF_NET_M1         adder_block_1_N01593
++  adder_block_1_N02092 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C1_Co_DIFF_NET_M4         adder_block_1_N01600
++  adder_block_1_N02080 adder_block_1_block_carry_C1_Co_DIFF_NET_N00302
++  adder_block_1_block_carry_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C2_Co_DIFF_NET_M2        
++  adder_block_1_block_carry_C2_Co_DIFF_NET_N00302 adder_block_1_N02104 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C2_Co_DIFF_NET_M5         adder_block_1_N01607
++  adder_block_1_N01600 adder_block_1_block_carry_C2_Co_DIFF_NET_N00314
++  adder_block_1_block_carry_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C2_Co_DIFF_NET_M3        
++  adder_block_1_block_carry_C2_Co_DIFF_NET_N00314 adder_block_1_N02100
++  adder_block_1_block_carry_C2_Co_DIFF_NET_N00302
++  adder_block_1_block_carry_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C2_Co_DIFF_NET_M6         adder_block_1_N01614
++  adder_block_1_N01593 adder_block_1_block_carry_C2_Co_DIFF_NET_N00314
++  adder_block_1_block_carry_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C2_Co_DIFF_NET_M1         adder_block_1_N01607
++  adder_block_1_N02108 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C2_Co_DIFF_NET_M4         adder_block_1_N01614
++  adder_block_1_N02096 adder_block_1_block_carry_C2_Co_DIFF_NET_N00302
++  adder_block_1_block_carry_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C4_Co_DIFF_NET_M2        
++  adder_block_1_block_carry_C4_Co_DIFF_NET_N00302 adder_block_1_N02166 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C4_Co_DIFF_NET_M5         adder_N20385
++  adder_block_1_N01628 adder_block_1_block_carry_C4_Co_DIFF_NET_N00314
++  adder_block_1_block_carry_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C4_Co_DIFF_NET_M3        
++  adder_block_1_block_carry_C4_Co_DIFF_NET_N00314 adder_block_1_N02162
++  adder_block_1_block_carry_C4_Co_DIFF_NET_N00302
++  adder_block_1_block_carry_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C4_Co_DIFF_NET_M6         adder_N05645
++  adder_block_1_N01621 adder_block_1_block_carry_C4_Co_DIFF_NET_N00314
++  adder_block_1_block_carry_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C4_Co_DIFF_NET_M1         adder_N20385
++  adder_block_1_N02170 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_C4_Co_DIFF_NET_M4         adder_N05645
++  adder_block_1_N02158 adder_block_1_block_carry_C4_Co_DIFF_NET_N00302
++  adder_block_1_block_carry_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M5         adder_N62329
++  adder_block_1_N02154 adder_block_1_block_carry_group_G_GG_DIFF_NET_N01677
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M4         adder_N62333
++  adder_block_1_N02158 adder_block_1_block_carry_group_G_GG_DIFF_NET_N01001
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M1         adder_N62329
++  adder_block_1_N02170 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M3        
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N01677 adder_block_1_N02162
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N01001
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M8         adder_N62333
++  adder_block_1_N02112 adder_block_1_block_carry_group_G_GG_DIFF_NET_N02525
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M7        
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_BREAK_1 adder_block_1_N02116
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N02525
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M6        
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N02525 adder_block_1_N02116
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N01677
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M2        
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N01001 adder_block_1_N02166 VDD
++  VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M10        
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N02967 adder_block_1_N02104
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_BREAK_1
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M14         adder_N62333
++  adder_block_1_N02088 adder_block_1_block_carry_group_G_GG_DIFF_NET_N03001
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M9         adder_N62329
++  adder_block_1_N02108 adder_block_1_block_carry_group_G_GG_DIFF_NET_BREAK_1
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M13         adder_N62329
++  adder_block_1_N02092 adder_block_1_block_carry_group_G_GG_DIFF_NET_N03001
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M12         adder_N62333
++  adder_block_1_N02096 adder_block_1_block_carry_group_G_GG_DIFF_NET_N02967
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_G_GG_DIFF_NET_M11        
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N03001 adder_block_1_N02100
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N02967
++  adder_block_1_block_carry_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_P_PG_DIFF_NET_M8         adder_N62321
++  adder_block_1_N02084 adder_block_1_block_carry_group_P_PG_DIFF_NET_N03885
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_P_PG_DIFF_NET_M2        
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N02033 adder_block_1_N02084 VDD
++  VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_P_PG_DIFF_NET_M7         adder_N62325
++  adder_block_1_N02080 adder_block_1_block_carry_group_P_PG_DIFF_NET_N03885
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_P_PG_DIFF_NET_M4        
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N03861 adder_block_1_N02084
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N02033
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_P_PG_DIFF_NET_M1         adder_N62325
++  adder_block_1_N02080 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_P_PG_DIFF_NET_M3         adder_N62325
++  adder_block_1_N02080 adder_block_1_block_carry_group_P_PG_DIFF_NET_N02033
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_P_PG_DIFF_NET_M6        
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N03885 adder_block_1_N02084
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N03861
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_block_carry_group_P_PG_DIFF_NET_M5         adder_N62325
++  adder_block_1_N02080 adder_block_1_block_carry_group_P_PG_DIFF_NET_N03861
++  adder_block_1_block_carry_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_S_DIFF_NET_M2        
++  adder_block_1_digit2_S_S_DIFF_NET_N00298 adder_block_1_N01607 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_S_DIFF_NET_M5         adder_block_1_digit2_S_N00086
++  adder_block_1_N02116 adder_block_1_digit2_S_S_DIFF_NET_N00298
++  adder_block_1_digit2_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_S_DIFF_NET_M3         adder_block_1_digit2_S_N00090
++  adder_block_1_N02116 adder_block_1_digit2_S_S_DIFF_NET_N00294
++  adder_block_1_digit2_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_S_DIFF_NET_M1        
++  adder_block_1_digit2_S_S_DIFF_NET_N00294 adder_block_1_N01614 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_S_DIFF_NET_M6         adder_block_1_digit2_S_N00090
++  adder_block_1_N02112 adder_block_1_digit2_S_S_DIFF_NET_N00298
++  adder_block_1_digit2_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_S_DIFF_NET_M4         adder_block_1_digit2_S_N00086
++  adder_block_1_N02112 adder_block_1_digit2_S_S_DIFF_NET_N00294
++  adder_block_1_digit2_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_DCML_M4         SB6 S6
++  adder_block_1_digit2_S_DCML_N00757 adder_block_1_digit2_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M9         S6 SB6
++  adder_block_1_digit2_S_DCML_N00714 adder_block_1_digit2_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M14         adder_block_1_digit2_S_DCML_N00753
++  adder_block_1_digit2_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M2         SB6 S6 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_DCML_M7         SB6 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_DCML_M12         adder_block_1_digit2_S_DCML_N00710
++  adder_block_1_digit2_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M5         adder_block_1_digit2_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M10         SB6 S6
++  adder_block_1_digit2_S_DCML_N00753 adder_block_1_digit2_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M15         adder_block_1_digit2_S_DCML_N00745
++  adder_block_1_digit2_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M3         S6 SB6
++  adder_block_1_digit2_S_DCML_N00757 adder_block_1_digit2_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M8         adder_block_1_digit2_S_N00090 S6
++  adder_block_1_digit2_S_DCML_N00710 adder_block_1_digit2_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M13         adder_block_1_digit2_S_DCML_N00714
++  adder_block_1_digit2_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_S_DCML_M1         S6 SB6 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_DCML_M6         S6 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_S_DCML_M11         adder_block_1_digit2_S_N00086 SB6
++  adder_block_1_digit2_S_DCML_N00745 adder_block_1_digit2_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit2_P_P_DIFF_NET_M4         adder_block_1_N02112 B6
++  adder_block_1_digit2_P_P_DIFF_NET_N00761
++  adder_block_1_digit2_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_P_P_DIFF_NET_M6         adder_block_1_N02116 B6
++  adder_block_1_digit2_P_P_DIFF_NET_N00765
++  adder_block_1_digit2_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_P_P_DIFF_NET_M1        
++  adder_block_1_digit2_P_P_DIFF_NET_N00761 A6 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_P_P_DIFF_NET_M3         adder_block_1_N02116
++  adder_N05325 adder_block_1_digit2_P_P_DIFF_NET_N00761
++  adder_block_1_digit2_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_P_P_DIFF_NET_M5         adder_block_1_N02112
++  adder_N05325 adder_block_1_digit2_P_P_DIFF_NET_N00765
++  adder_block_1_digit2_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_P_P_DIFF_NET_M2        
++  adder_block_1_digit2_P_P_DIFF_NET_N00765 A6 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_G_G_DIFF_NET_M2        
++  adder_block_1_digit2_G_G_DIFF_NET_N01214 A6 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_G_G_DIFF_NET_M4         adder_block_1_N02154 B6
++  adder_block_1_digit2_G_G_DIFF_NET_N01210
++  adder_block_1_digit2_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_G_G_DIFF_NET_M6         adder_block_1_N02154 B6
++  adder_block_1_digit2_G_G_DIFF_NET_N01214
++  adder_block_1_digit2_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_G_G_DIFF_NET_M1        
++  adder_block_1_digit2_G_G_DIFF_NET_N01210 A6 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_G_G_DIFF_NET_M3         adder_block_1_N02116
++  adder_N05325 adder_block_1_digit2_G_G_DIFF_NET_N01210
++  adder_block_1_digit2_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit2_G_G_DIFF_NET_M5         adder_block_1_N02154
++  adder_N05325 adder_block_1_digit2_G_G_DIFF_NET_N01214
++  adder_block_1_digit2_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_S_DIFF_NET_M2        
++  adder_block_1_digit1_S_S_DIFF_NET_N00298 adder_block_1_N01593 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_S_DIFF_NET_M5         adder_block_1_digit1_S_N00086
++  adder_block_1_N02100 adder_block_1_digit1_S_S_DIFF_NET_N00298
++  adder_block_1_digit1_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_S_DIFF_NET_M3         adder_block_1_digit1_S_N00090
++  adder_block_1_N02100 adder_block_1_digit1_S_S_DIFF_NET_N00294
++  adder_block_1_digit1_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_S_DIFF_NET_M1        
++  adder_block_1_digit1_S_S_DIFF_NET_N00294 adder_block_1_N01600 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_S_DIFF_NET_M6         adder_block_1_digit1_S_N00090
++  adder_block_1_N02096 adder_block_1_digit1_S_S_DIFF_NET_N00298
++  adder_block_1_digit1_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_S_DIFF_NET_M4         adder_block_1_digit1_S_N00086
++  adder_block_1_N02096 adder_block_1_digit1_S_S_DIFF_NET_N00294
++  adder_block_1_digit1_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_DCML_M4         SB5 S5
++  adder_block_1_digit1_S_DCML_N00757 adder_block_1_digit1_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M9         S5 SB5
++  adder_block_1_digit1_S_DCML_N00714 adder_block_1_digit1_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M14         adder_block_1_digit1_S_DCML_N00753
++  adder_block_1_digit1_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M2         SB5 S5 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_DCML_M7         SB5 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_DCML_M12         adder_block_1_digit1_S_DCML_N00710
++  adder_block_1_digit1_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M5         adder_block_1_digit1_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M10         SB5 S5
++  adder_block_1_digit1_S_DCML_N00753 adder_block_1_digit1_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M15         adder_block_1_digit1_S_DCML_N00745
++  adder_block_1_digit1_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M3         S5 SB5
++  adder_block_1_digit1_S_DCML_N00757 adder_block_1_digit1_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M8         adder_block_1_digit1_S_N00090 S5
++  adder_block_1_digit1_S_DCML_N00710 adder_block_1_digit1_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M13         adder_block_1_digit1_S_DCML_N00714
++  adder_block_1_digit1_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_S_DCML_M1         S5 SB5 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_DCML_M6         S5 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_S_DCML_M11         adder_block_1_digit1_S_N00086 SB5
++  adder_block_1_digit1_S_DCML_N00745 adder_block_1_digit1_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit1_P_P_DIFF_NET_M4         adder_block_1_N02096 B5
++  adder_block_1_digit1_P_P_DIFF_NET_N00761
++  adder_block_1_digit1_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_P_P_DIFF_NET_M6         adder_block_1_N02100 B5
++  adder_block_1_digit1_P_P_DIFF_NET_N00765
++  adder_block_1_digit1_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_P_P_DIFF_NET_M1        
++  adder_block_1_digit1_P_P_DIFF_NET_N00761 A5 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_P_P_DIFF_NET_M3         adder_block_1_N02100
++  adder_N05337 adder_block_1_digit1_P_P_DIFF_NET_N00761
++  adder_block_1_digit1_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_P_P_DIFF_NET_M5         adder_block_1_N02096
++  adder_N05337 adder_block_1_digit1_P_P_DIFF_NET_N00765
++  adder_block_1_digit1_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_P_P_DIFF_NET_M2        
++  adder_block_1_digit1_P_P_DIFF_NET_N00765 A5 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_G_G_DIFF_NET_M2        
++  adder_block_1_digit1_G_G_DIFF_NET_N01214 A5 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_G_G_DIFF_NET_M4         adder_block_1_N02108 B5
++  adder_block_1_digit1_G_G_DIFF_NET_N01210
++  adder_block_1_digit1_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_G_G_DIFF_NET_M6         adder_block_1_N02108 B5
++  adder_block_1_digit1_G_G_DIFF_NET_N01214
++  adder_block_1_digit1_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_G_G_DIFF_NET_M1        
++  adder_block_1_digit1_G_G_DIFF_NET_N01210 A5 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_G_G_DIFF_NET_M3         adder_block_1_N02104
++  adder_N05337 adder_block_1_digit1_G_G_DIFF_NET_N01210
++  adder_block_1_digit1_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit1_G_G_DIFF_NET_M5         adder_block_1_N02108
++  adder_N05337 adder_block_1_digit1_G_G_DIFF_NET_N01214
++  adder_block_1_digit1_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_S_DIFF_NET_M2        
++  adder_block_1_digit3_S_S_DIFF_NET_N00298 adder_block_1_N01621 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_S_DIFF_NET_M5         adder_block_1_digit3_S_N00086
++  adder_block_1_N02162 adder_block_1_digit3_S_S_DIFF_NET_N00298
++  adder_block_1_digit3_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_S_DIFF_NET_M3         adder_block_1_digit3_S_N00090
++  adder_block_1_N02162 adder_block_1_digit3_S_S_DIFF_NET_N00294
++  adder_block_1_digit3_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_S_DIFF_NET_M1        
++  adder_block_1_digit3_S_S_DIFF_NET_N00294 adder_block_1_N01628 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_S_DIFF_NET_M6         adder_block_1_digit3_S_N00090
++  adder_block_1_N02158 adder_block_1_digit3_S_S_DIFF_NET_N00298
++  adder_block_1_digit3_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_S_DIFF_NET_M4         adder_block_1_digit3_S_N00086
++  adder_block_1_N02158 adder_block_1_digit3_S_S_DIFF_NET_N00294
++  adder_block_1_digit3_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_DCML_M4         SB7 S7
++  adder_block_1_digit3_S_DCML_N00757 adder_block_1_digit3_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M9         S7 SB7
++  adder_block_1_digit3_S_DCML_N00714 adder_block_1_digit3_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M14         adder_block_1_digit3_S_DCML_N00753
++  adder_block_1_digit3_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M2         SB7 S7 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_DCML_M7         SB7 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_DCML_M12         adder_block_1_digit3_S_DCML_N00710
++  adder_block_1_digit3_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M5         adder_block_1_digit3_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M10         SB7 S7
++  adder_block_1_digit3_S_DCML_N00753 adder_block_1_digit3_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M15         adder_block_1_digit3_S_DCML_N00745
++  adder_block_1_digit3_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M3         S7 SB7
++  adder_block_1_digit3_S_DCML_N00757 adder_block_1_digit3_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M8         adder_block_1_digit3_S_N00090 S7
++  adder_block_1_digit3_S_DCML_N00710 adder_block_1_digit3_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M13         adder_block_1_digit3_S_DCML_N00714
++  adder_block_1_digit3_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_S_DCML_M1         S7 SB7 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_DCML_M6         S7 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_S_DCML_M11         adder_block_1_digit3_S_N00086 SB7
++  adder_block_1_digit3_S_DCML_N00745 adder_block_1_digit3_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit3_P_P_DIFF_NET_M4         adder_block_1_N02158 B7
++  adder_block_1_digit3_P_P_DIFF_NET_N00761
++  adder_block_1_digit3_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_P_P_DIFF_NET_M6         adder_block_1_N02162 B7
++  adder_block_1_digit3_P_P_DIFF_NET_N00765
++  adder_block_1_digit3_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_P_P_DIFF_NET_M1        
++  adder_block_1_digit3_P_P_DIFF_NET_N00761 adder_N05409 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_P_P_DIFF_NET_M3         adder_block_1_N02162 B7
++  adder_block_1_digit3_P_P_DIFF_NET_N00761
++  adder_block_1_digit3_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_P_P_DIFF_NET_M5         adder_block_1_N02158 B7
++  adder_block_1_digit3_P_P_DIFF_NET_N00765
++  adder_block_1_digit3_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_P_P_DIFF_NET_M2        
++  adder_block_1_digit3_P_P_DIFF_NET_N00765 A7 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_G_G_DIFF_NET_M2        
++  adder_block_1_digit3_G_G_DIFF_NET_N01214 A7 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_G_G_DIFF_NET_M4         adder_block_1_N02170 B7
++  adder_block_1_digit3_G_G_DIFF_NET_N01210
++  adder_block_1_digit3_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_G_G_DIFF_NET_M6         adder_block_1_N02170 B7
++  adder_block_1_digit3_G_G_DIFF_NET_N01214
++  adder_block_1_digit3_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_G_G_DIFF_NET_M1        
++  adder_block_1_digit3_G_G_DIFF_NET_N01210 adder_N05409 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_G_G_DIFF_NET_M3         adder_block_1_N02166 B7
++  adder_block_1_digit3_G_G_DIFF_NET_N01210
++  adder_block_1_digit3_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit3_G_G_DIFF_NET_M5         adder_block_1_N02170 B7
++  adder_block_1_digit3_G_G_DIFF_NET_N01214
++  adder_block_1_digit3_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_S_DIFF_NET_M2        
++  adder_block_1_digit0_S_S_DIFF_NET_N00298 adder_N63358 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_S_DIFF_NET_M5         adder_block_1_digit0_S_N00086
++  adder_block_1_N02084 adder_block_1_digit0_S_S_DIFF_NET_N00298
++  adder_block_1_digit0_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_S_DIFF_NET_M3         adder_block_1_digit0_S_N00090
++  adder_block_1_N02084 adder_block_1_digit0_S_S_DIFF_NET_N00294
++  adder_block_1_digit0_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_S_DIFF_NET_M1        
++  adder_block_1_digit0_S_S_DIFF_NET_N00294 adder_N63362 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_S_DIFF_NET_M6         adder_block_1_digit0_S_N00090
++  adder_block_1_N02080 adder_block_1_digit0_S_S_DIFF_NET_N00298
++  adder_block_1_digit0_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_S_DIFF_NET_M4         adder_block_1_digit0_S_N00086
++  adder_block_1_N02080 adder_block_1_digit0_S_S_DIFF_NET_N00294
++  adder_block_1_digit0_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_DCML_M4         SB4 S4
++  adder_block_1_digit0_S_DCML_N00757 adder_block_1_digit0_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M9         S4 SB4
++  adder_block_1_digit0_S_DCML_N00714 adder_block_1_digit0_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M14         adder_block_1_digit0_S_DCML_N00753
++  adder_block_1_digit0_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M2         SB4 S4 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_DCML_M7         SB4 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_DCML_M12         adder_block_1_digit0_S_DCML_N00710
++  adder_block_1_digit0_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M5         adder_block_1_digit0_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M10         SB4 S4
++  adder_block_1_digit0_S_DCML_N00753 adder_block_1_digit0_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M15         adder_block_1_digit0_S_DCML_N00745
++  adder_block_1_digit0_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M3         S4 SB4
++  adder_block_1_digit0_S_DCML_N00757 adder_block_1_digit0_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M8         adder_block_1_digit0_S_N00090 S4
++  adder_block_1_digit0_S_DCML_N00710 adder_block_1_digit0_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M13         adder_block_1_digit0_S_DCML_N00714
++  adder_block_1_digit0_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_S_DCML_M1         S4 SB4 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_DCML_M6         S4 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_S_DCML_M11         adder_block_1_digit0_S_N00086 SB4
++  adder_block_1_digit0_S_DCML_N00745 adder_block_1_digit0_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_1_digit0_P_P_DIFF_NET_M4         adder_block_1_N02080 B4
++  adder_block_1_digit0_P_P_DIFF_NET_N00761
++  adder_block_1_digit0_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_P_P_DIFF_NET_M6         adder_block_1_N02084 B4
++  adder_block_1_digit0_P_P_DIFF_NET_N00765
++  adder_block_1_digit0_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_P_P_DIFF_NET_M1        
++  adder_block_1_digit0_P_P_DIFF_NET_N00761 adder_N05437 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_P_P_DIFF_NET_M3         adder_block_1_N02084
++  adder_N05349 adder_block_1_digit0_P_P_DIFF_NET_N00761
++  adder_block_1_digit0_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_P_P_DIFF_NET_M5         adder_block_1_N02080
++  adder_N05349 adder_block_1_digit0_P_P_DIFF_NET_N00765
++  adder_block_1_digit0_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_P_P_DIFF_NET_M2        
++  adder_block_1_digit0_P_P_DIFF_NET_N00765 A4 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_G_G_DIFF_NET_M2        
++  adder_block_1_digit0_G_G_DIFF_NET_N01214 A4 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_G_G_DIFF_NET_M4         adder_block_1_N02092 B4
++  adder_block_1_digit0_G_G_DIFF_NET_N01210
++  adder_block_1_digit0_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_G_G_DIFF_NET_M6         adder_block_1_N02092 B4
++  adder_block_1_digit0_G_G_DIFF_NET_N01214
++  adder_block_1_digit0_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_G_G_DIFF_NET_M1        
++  adder_block_1_digit0_G_G_DIFF_NET_N01210 adder_N05437 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_G_G_DIFF_NET_M3         adder_block_1_N02088
++  adder_N05349 adder_block_1_digit0_G_G_DIFF_NET_N01210
++  adder_block_1_digit0_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_1_digit0_G_G_DIFF_NET_M5         adder_block_1_N02092
++  adder_N05349 adder_block_1_digit0_G_G_DIFF_NET_N01214
++  adder_block_1_digit0_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A1_M1         A1 A1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A1_M2         A1 A1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B12_M1         adder_N10220 B12 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B12_M2         adder_N10220 B12 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A11_M1         adder_N07283 A11 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A11_M2         adder_N07283 A11 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B3_M1         B3 B3 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B3_M2         B3 B3 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_A9_M1         A9 A9 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_A9_M2         A9 A9 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B11_M1         B11 B11 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B11_M2         B11 B11 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B1_M1         adder_N03538 B1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B1_M2         adder_N03538 B1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_not_B9_M1         adder_N07211 B9 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_not_B9_M2         adder_N07211 B9 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_block_carry_C3_Co_DIFF_NET_M2        
++  adder_block_0_block_carry_C3_Co_DIFF_NET_N00302 adder_block_0_N02116 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C3_Co_DIFF_NET_M5         adder_block_0_N01621
++  adder_block_0_N01614 adder_block_0_block_carry_C3_Co_DIFF_NET_N00314
++  adder_block_0_block_carry_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C3_Co_DIFF_NET_M3        
++  adder_block_0_block_carry_C3_Co_DIFF_NET_N00314 adder_block_0_N02116
++  adder_block_0_block_carry_C3_Co_DIFF_NET_N00302
++  adder_block_0_block_carry_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C3_Co_DIFF_NET_M6         adder_block_0_N01628
++  adder_block_0_N01607 adder_block_0_block_carry_C3_Co_DIFF_NET_N00314
++  adder_block_0_block_carry_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C3_Co_DIFF_NET_M1         adder_block_0_N01621
++  adder_block_0_N02154 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C3_Co_DIFF_NET_M4         adder_block_0_N01628
++  adder_block_0_N02112 adder_block_0_block_carry_C3_Co_DIFF_NET_N00302
++  adder_block_0_block_carry_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C1_Co_DIFF_NET_M2        
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00302 adder_block_0_N02088 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C1_Co_DIFF_NET_M5         adder_block_0_N01593 VDD
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00314
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C1_Co_DIFF_NET_M3        
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00314 adder_block_0_N02084
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00302
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C1_Co_DIFF_NET_M6         adder_block_0_N01600 0
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00314
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C1_Co_DIFF_NET_M1         adder_block_0_N01593
++  adder_block_0_N02092 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C1_Co_DIFF_NET_M4         adder_block_0_N01600
++  adder_block_0_N02080 adder_block_0_block_carry_C1_Co_DIFF_NET_N00302
++  adder_block_0_block_carry_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C2_Co_DIFF_NET_M2        
++  adder_block_0_block_carry_C2_Co_DIFF_NET_N00302 adder_block_0_N02104 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C2_Co_DIFF_NET_M5         adder_block_0_N01607
++  adder_block_0_N01600 adder_block_0_block_carry_C2_Co_DIFF_NET_N00314
++  adder_block_0_block_carry_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C2_Co_DIFF_NET_M3        
++  adder_block_0_block_carry_C2_Co_DIFF_NET_N00314 adder_block_0_N02100
++  adder_block_0_block_carry_C2_Co_DIFF_NET_N00302
++  adder_block_0_block_carry_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C2_Co_DIFF_NET_M6         adder_block_0_N01614
++  adder_block_0_N01593 adder_block_0_block_carry_C2_Co_DIFF_NET_N00314
++  adder_block_0_block_carry_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C2_Co_DIFF_NET_M1         adder_block_0_N01607
++  adder_block_0_N02108 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C2_Co_DIFF_NET_M4         adder_block_0_N01614
++  adder_block_0_N02096 adder_block_0_block_carry_C2_Co_DIFF_NET_N00302
++  adder_block_0_block_carry_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C4_Co_DIFF_NET_M2        
++  adder_block_0_block_carry_C4_Co_DIFF_NET_N00302 adder_block_0_N02166 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C4_Co_DIFF_NET_M5         adder_N38950
++  adder_block_0_N01628 adder_block_0_block_carry_C4_Co_DIFF_NET_N00314
++  adder_block_0_block_carry_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C4_Co_DIFF_NET_M3        
++  adder_block_0_block_carry_C4_Co_DIFF_NET_N00314 adder_block_0_N02162
++  adder_block_0_block_carry_C4_Co_DIFF_NET_N00302
++  adder_block_0_block_carry_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C4_Co_DIFF_NET_M6         adder_N38954
++  adder_block_0_N01621 adder_block_0_block_carry_C4_Co_DIFF_NET_N00314
++  adder_block_0_block_carry_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C4_Co_DIFF_NET_M1         adder_N38950
++  adder_block_0_N02170 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_C4_Co_DIFF_NET_M4         adder_N38954
++  adder_block_0_N02158 adder_block_0_block_carry_C4_Co_DIFF_NET_N00302
++  adder_block_0_block_carry_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M5         adder_N56337
++  adder_block_0_N02154 adder_block_0_block_carry_group_G_GG_DIFF_NET_N01677
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M4         adder_N56341
++  adder_block_0_N02158 adder_block_0_block_carry_group_G_GG_DIFF_NET_N01001
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M1         adder_N56337
++  adder_block_0_N02170 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M3        
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N01677 adder_block_0_N02162
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N01001
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M8         adder_N56341
++  adder_block_0_N02112 adder_block_0_block_carry_group_G_GG_DIFF_NET_N02525
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M7        
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_BREAK_1 adder_block_0_N02116
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N02525
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M6        
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N02525 adder_block_0_N02116
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N01677
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M2        
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N01001 adder_block_0_N02166 VDD
++  VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M10        
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N02967 adder_block_0_N02104
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_BREAK_1
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M14         adder_N56341
++  adder_block_0_N02088 adder_block_0_block_carry_group_G_GG_DIFF_NET_N03001
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M9         adder_N56337
++  adder_block_0_N02108 adder_block_0_block_carry_group_G_GG_DIFF_NET_BREAK_1
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M13         adder_N56337
++  adder_block_0_N02092 adder_block_0_block_carry_group_G_GG_DIFF_NET_N03001
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M12         adder_N56341
++  adder_block_0_N02096 adder_block_0_block_carry_group_G_GG_DIFF_NET_N02967
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_G_GG_DIFF_NET_M11        
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N03001 adder_block_0_N02100
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N02967
++  adder_block_0_block_carry_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_P_PG_DIFF_NET_M8         adder_N56025
++  adder_block_0_N02084 adder_block_0_block_carry_group_P_PG_DIFF_NET_N03885
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_P_PG_DIFF_NET_M2        
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N02033 adder_block_0_N02084 VDD
++  VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_P_PG_DIFF_NET_M7         adder_N56333
++  adder_block_0_N02080 adder_block_0_block_carry_group_P_PG_DIFF_NET_N03885
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_P_PG_DIFF_NET_M4        
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N03861 adder_block_0_N02084
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N02033
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_P_PG_DIFF_NET_M1         adder_N56333
++  adder_block_0_N02080 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_P_PG_DIFF_NET_M3         adder_N56333
++  adder_block_0_N02080 adder_block_0_block_carry_group_P_PG_DIFF_NET_N02033
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_P_PG_DIFF_NET_M6        
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N03885 adder_block_0_N02084
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N03861
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_block_carry_group_P_PG_DIFF_NET_M5         adder_N56333
++  adder_block_0_N02080 adder_block_0_block_carry_group_P_PG_DIFF_NET_N03861
++  adder_block_0_block_carry_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_S_DIFF_NET_M2        
++  adder_block_0_digit2_S_S_DIFF_NET_N00298 adder_block_0_N01607 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_S_DIFF_NET_M5         adder_block_0_digit2_S_N00086
++  adder_block_0_N02116 adder_block_0_digit2_S_S_DIFF_NET_N00298
++  adder_block_0_digit2_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_S_DIFF_NET_M3         adder_block_0_digit2_S_N00090
++  adder_block_0_N02116 adder_block_0_digit2_S_S_DIFF_NET_N00294
++  adder_block_0_digit2_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_S_DIFF_NET_M1        
++  adder_block_0_digit2_S_S_DIFF_NET_N00294 adder_block_0_N01614 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_S_DIFF_NET_M6         adder_block_0_digit2_S_N00090
++  adder_block_0_N02112 adder_block_0_digit2_S_S_DIFF_NET_N00298
++  adder_block_0_digit2_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_S_DIFF_NET_M4         adder_block_0_digit2_S_N00086
++  adder_block_0_N02112 adder_block_0_digit2_S_S_DIFF_NET_N00294
++  adder_block_0_digit2_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_DCML_M4         SB2 S2
++  adder_block_0_digit2_S_DCML_N00757 adder_block_0_digit2_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M9         S2 SB2
++  adder_block_0_digit2_S_DCML_N00714 adder_block_0_digit2_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M14         adder_block_0_digit2_S_DCML_N00753
++  adder_block_0_digit2_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M2         SB2 S2 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_DCML_M7         SB2 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_DCML_M12         adder_block_0_digit2_S_DCML_N00710
++  adder_block_0_digit2_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M5         adder_block_0_digit2_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M10         SB2 S2
++  adder_block_0_digit2_S_DCML_N00753 adder_block_0_digit2_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M15         adder_block_0_digit2_S_DCML_N00745
++  adder_block_0_digit2_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M3         S2 SB2
++  adder_block_0_digit2_S_DCML_N00757 adder_block_0_digit2_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M8         adder_block_0_digit2_S_N00090 S2
++  adder_block_0_digit2_S_DCML_N00710 adder_block_0_digit2_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M13         adder_block_0_digit2_S_DCML_N00714
++  adder_block_0_digit2_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_S_DCML_M1         S2 SB2 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_DCML_M6         S2 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_S_DCML_M11         adder_block_0_digit2_S_N00086 SB2
++  adder_block_0_digit2_S_DCML_N00745 adder_block_0_digit2_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit2_P_P_DIFF_NET_M4         adder_block_0_N02112 B2
++  adder_block_0_digit2_P_P_DIFF_NET_N00761
++  adder_block_0_digit2_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_P_P_DIFF_NET_M6         adder_block_0_N02116 B2
++  adder_block_0_digit2_P_P_DIFF_NET_N00765
++  adder_block_0_digit2_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_P_P_DIFF_NET_M1        
++  adder_block_0_digit2_P_P_DIFF_NET_N00761 A2 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_P_P_DIFF_NET_M3         adder_block_0_N02116
++  adder_N03526 adder_block_0_digit2_P_P_DIFF_NET_N00761
++  adder_block_0_digit2_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_P_P_DIFF_NET_M5         adder_block_0_N02112
++  adder_N03526 adder_block_0_digit2_P_P_DIFF_NET_N00765
++  adder_block_0_digit2_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_P_P_DIFF_NET_M2        
++  adder_block_0_digit2_P_P_DIFF_NET_N00765 A2 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_G_G_DIFF_NET_M2        
++  adder_block_0_digit2_G_G_DIFF_NET_N01214 A2 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_G_G_DIFF_NET_M4         adder_block_0_N02154 B2
++  adder_block_0_digit2_G_G_DIFF_NET_N01210
++  adder_block_0_digit2_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_G_G_DIFF_NET_M6         adder_block_0_N02154 B2
++  adder_block_0_digit2_G_G_DIFF_NET_N01214
++  adder_block_0_digit2_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_G_G_DIFF_NET_M1        
++  adder_block_0_digit2_G_G_DIFF_NET_N01210 A2 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_G_G_DIFF_NET_M3         adder_block_0_N02116
++  adder_N03526 adder_block_0_digit2_G_G_DIFF_NET_N01210
++  adder_block_0_digit2_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit2_G_G_DIFF_NET_M5         adder_block_0_N02154
++  adder_N03526 adder_block_0_digit2_G_G_DIFF_NET_N01214
++  adder_block_0_digit2_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_S_DIFF_NET_M2        
++  adder_block_0_digit1_S_S_DIFF_NET_N00298 adder_block_0_N01593 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_S_DIFF_NET_M5         adder_block_0_digit1_S_N00086
++  adder_block_0_N02100 adder_block_0_digit1_S_S_DIFF_NET_N00298
++  adder_block_0_digit1_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_S_DIFF_NET_M3         adder_block_0_digit1_S_N00090
++  adder_block_0_N02100 adder_block_0_digit1_S_S_DIFF_NET_N00294
++  adder_block_0_digit1_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_S_DIFF_NET_M1        
++  adder_block_0_digit1_S_S_DIFF_NET_N00294 adder_block_0_N01600 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_S_DIFF_NET_M6         adder_block_0_digit1_S_N00090
++  adder_block_0_N02096 adder_block_0_digit1_S_S_DIFF_NET_N00298
++  adder_block_0_digit1_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_S_DIFF_NET_M4         adder_block_0_digit1_S_N00086
++  adder_block_0_N02096 adder_block_0_digit1_S_S_DIFF_NET_N00294
++  adder_block_0_digit1_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_DCML_M4         SB1 S1
++  adder_block_0_digit1_S_DCML_N00757 adder_block_0_digit1_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M9         S1 SB1
++  adder_block_0_digit1_S_DCML_N00714 adder_block_0_digit1_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M14         adder_block_0_digit1_S_DCML_N00753
++  adder_block_0_digit1_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M2         SB1 S1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_DCML_M7         SB1 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_DCML_M12         adder_block_0_digit1_S_DCML_N00710
++  adder_block_0_digit1_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M5         adder_block_0_digit1_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M10         SB1 S1
++  adder_block_0_digit1_S_DCML_N00753 adder_block_0_digit1_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M15         adder_block_0_digit1_S_DCML_N00745
++  adder_block_0_digit1_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M3         S1 SB1
++  adder_block_0_digit1_S_DCML_N00757 adder_block_0_digit1_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M8         adder_block_0_digit1_S_N00090 S1
++  adder_block_0_digit1_S_DCML_N00710 adder_block_0_digit1_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M13         adder_block_0_digit1_S_DCML_N00714
++  adder_block_0_digit1_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_S_DCML_M1         S1 SB1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_DCML_M6         S1 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_S_DCML_M11         adder_block_0_digit1_S_N00086 SB1
++  adder_block_0_digit1_S_DCML_N00745 adder_block_0_digit1_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit1_P_P_DIFF_NET_M4         adder_block_0_N02096 B1
++  adder_block_0_digit1_P_P_DIFF_NET_N00761
++  adder_block_0_digit1_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_P_P_DIFF_NET_M6         adder_block_0_N02100 B1
++  adder_block_0_digit1_P_P_DIFF_NET_N00765
++  adder_block_0_digit1_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_P_P_DIFF_NET_M1        
++  adder_block_0_digit1_P_P_DIFF_NET_N00761 A1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_P_P_DIFF_NET_M3         adder_block_0_N02100
++  adder_N03538 adder_block_0_digit1_P_P_DIFF_NET_N00761
++  adder_block_0_digit1_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_P_P_DIFF_NET_M5         adder_block_0_N02096
++  adder_N03538 adder_block_0_digit1_P_P_DIFF_NET_N00765
++  adder_block_0_digit1_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_P_P_DIFF_NET_M2        
++  adder_block_0_digit1_P_P_DIFF_NET_N00765 A1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_G_G_DIFF_NET_M2        
++  adder_block_0_digit1_G_G_DIFF_NET_N01214 A1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_G_G_DIFF_NET_M4         adder_block_0_N02108 B1
++  adder_block_0_digit1_G_G_DIFF_NET_N01210
++  adder_block_0_digit1_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_G_G_DIFF_NET_M6         adder_block_0_N02108 B1
++  adder_block_0_digit1_G_G_DIFF_NET_N01214
++  adder_block_0_digit1_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_G_G_DIFF_NET_M1        
++  adder_block_0_digit1_G_G_DIFF_NET_N01210 A1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_G_G_DIFF_NET_M3         adder_block_0_N02104
++  adder_N03538 adder_block_0_digit1_G_G_DIFF_NET_N01210
++  adder_block_0_digit1_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit1_G_G_DIFF_NET_M5         adder_block_0_N02108
++  adder_N03538 adder_block_0_digit1_G_G_DIFF_NET_N01214
++  adder_block_0_digit1_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_S_DIFF_NET_M2        
++  adder_block_0_digit3_S_S_DIFF_NET_N00298 adder_block_0_N01621 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_S_DIFF_NET_M5         adder_block_0_digit3_S_N00086
++  adder_block_0_N02162 adder_block_0_digit3_S_S_DIFF_NET_N00298
++  adder_block_0_digit3_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_S_DIFF_NET_M3         adder_block_0_digit3_S_N00090
++  adder_block_0_N02162 adder_block_0_digit3_S_S_DIFF_NET_N00294
++  adder_block_0_digit3_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_S_DIFF_NET_M1        
++  adder_block_0_digit3_S_S_DIFF_NET_N00294 adder_block_0_N01628 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_S_DIFF_NET_M6         adder_block_0_digit3_S_N00090
++  adder_block_0_N02158 adder_block_0_digit3_S_S_DIFF_NET_N00298
++  adder_block_0_digit3_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_S_DIFF_NET_M4         adder_block_0_digit3_S_N00086
++  adder_block_0_N02158 adder_block_0_digit3_S_S_DIFF_NET_N00294
++  adder_block_0_digit3_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_DCML_M4         SB3 S3
++  adder_block_0_digit3_S_DCML_N00757 adder_block_0_digit3_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M9         S3 SB3
++  adder_block_0_digit3_S_DCML_N00714 adder_block_0_digit3_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M14         adder_block_0_digit3_S_DCML_N00753
++  adder_block_0_digit3_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M2         SB3 S3 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_DCML_M7         SB3 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_DCML_M12         adder_block_0_digit3_S_DCML_N00710
++  adder_block_0_digit3_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M5         adder_block_0_digit3_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M10         SB3 S3
++  adder_block_0_digit3_S_DCML_N00753 adder_block_0_digit3_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M15         adder_block_0_digit3_S_DCML_N00745
++  adder_block_0_digit3_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M3         S3 SB3
++  adder_block_0_digit3_S_DCML_N00757 adder_block_0_digit3_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M8         adder_block_0_digit3_S_N00090 S3
++  adder_block_0_digit3_S_DCML_N00710 adder_block_0_digit3_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M13         adder_block_0_digit3_S_DCML_N00714
++  adder_block_0_digit3_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_S_DCML_M1         S3 SB3 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_DCML_M6         S3 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_S_DCML_M11         adder_block_0_digit3_S_N00086 SB3
++  adder_block_0_digit3_S_DCML_N00745 adder_block_0_digit3_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit3_P_P_DIFF_NET_M4         adder_block_0_N02158 B3
++  adder_block_0_digit3_P_P_DIFF_NET_N00761
++  adder_block_0_digit3_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_P_P_DIFF_NET_M6         adder_block_0_N02162 B3
++  adder_block_0_digit3_P_P_DIFF_NET_N00765
++  adder_block_0_digit3_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_P_P_DIFF_NET_M1        
++  adder_block_0_digit3_P_P_DIFF_NET_N00761 adder_N03610 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_P_P_DIFF_NET_M3         adder_block_0_N02162 B3
++  adder_block_0_digit3_P_P_DIFF_NET_N00761
++  adder_block_0_digit3_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_P_P_DIFF_NET_M5         adder_block_0_N02158 B3
++  adder_block_0_digit3_P_P_DIFF_NET_N00765
++  adder_block_0_digit3_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_P_P_DIFF_NET_M2        
++  adder_block_0_digit3_P_P_DIFF_NET_N00765 A3 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_G_G_DIFF_NET_M2        
++  adder_block_0_digit3_G_G_DIFF_NET_N01214 A3 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_G_G_DIFF_NET_M4         adder_block_0_N02170 B3
++  adder_block_0_digit3_G_G_DIFF_NET_N01210
++  adder_block_0_digit3_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_G_G_DIFF_NET_M6         adder_block_0_N02170 B3
++  adder_block_0_digit3_G_G_DIFF_NET_N01214
++  adder_block_0_digit3_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_G_G_DIFF_NET_M1        
++  adder_block_0_digit3_G_G_DIFF_NET_N01210 adder_N03610 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_G_G_DIFF_NET_M3         adder_block_0_N02166 B3
++  adder_block_0_digit3_G_G_DIFF_NET_N01210
++  adder_block_0_digit3_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit3_G_G_DIFF_NET_M5         adder_block_0_N02170 B3
++  adder_block_0_digit3_G_G_DIFF_NET_N01214
++  adder_block_0_digit3_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_S_DIFF_NET_M2        
++  adder_block_0_digit0_S_S_DIFF_NET_N00298 0 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_S_DIFF_NET_M5         adder_block_0_digit0_S_N00086
++  adder_block_0_N02084 adder_block_0_digit0_S_S_DIFF_NET_N00298
++  adder_block_0_digit0_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_S_DIFF_NET_M3         adder_block_0_digit0_S_N00090
++  adder_block_0_N02084 adder_block_0_digit0_S_S_DIFF_NET_N00294
++  adder_block_0_digit0_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_S_DIFF_NET_M1        
++  adder_block_0_digit0_S_S_DIFF_NET_N00294 VDD VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_S_DIFF_NET_M6         adder_block_0_digit0_S_N00090
++  adder_block_0_N02080 adder_block_0_digit0_S_S_DIFF_NET_N00298
++  adder_block_0_digit0_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_S_DIFF_NET_M4         adder_block_0_digit0_S_N00086
++  adder_block_0_N02080 adder_block_0_digit0_S_S_DIFF_NET_N00294
++  adder_block_0_digit0_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_DCML_M4         SB0 S0
++  adder_block_0_digit0_S_DCML_N00757 adder_block_0_digit0_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M9         S0 SB0
++  adder_block_0_digit0_S_DCML_N00714 adder_block_0_digit0_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M14         adder_block_0_digit0_S_DCML_N00753
++  adder_block_0_digit0_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M2         SB0 S0 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_DCML_M7         SB0 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_DCML_M12         adder_block_0_digit0_S_DCML_N00710
++  adder_block_0_digit0_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M5         adder_block_0_digit0_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M10         SB0 S0
++  adder_block_0_digit0_S_DCML_N00753 adder_block_0_digit0_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M15         adder_block_0_digit0_S_DCML_N00745
++  adder_block_0_digit0_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M3         S0 SB0
++  adder_block_0_digit0_S_DCML_N00757 adder_block_0_digit0_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M8         adder_block_0_digit0_S_N00090 S0
++  adder_block_0_digit0_S_DCML_N00710 adder_block_0_digit0_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M13         adder_block_0_digit0_S_DCML_N00714
++  adder_block_0_digit0_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_S_DCML_M1         S0 SB0 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_DCML_M6         S0 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_S_DCML_M11         adder_block_0_digit0_S_N00086 SB0
++  adder_block_0_digit0_S_DCML_N00745 adder_block_0_digit0_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_0_digit0_P_P_DIFF_NET_M4         adder_block_0_N02080 B0
++  adder_block_0_digit0_P_P_DIFF_NET_N00761
++  adder_block_0_digit0_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_P_P_DIFF_NET_M6         adder_block_0_N02084 B0
++  adder_block_0_digit0_P_P_DIFF_NET_N00765
++  adder_block_0_digit0_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_P_P_DIFF_NET_M1        
++  adder_block_0_digit0_P_P_DIFF_NET_N00761 adder_N03638 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_P_P_DIFF_NET_M3         adder_block_0_N02084
++  adder_N03550 adder_block_0_digit0_P_P_DIFF_NET_N00761
++  adder_block_0_digit0_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_P_P_DIFF_NET_M5         adder_block_0_N02080
++  adder_N03550 adder_block_0_digit0_P_P_DIFF_NET_N00765
++  adder_block_0_digit0_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_P_P_DIFF_NET_M2        
++  adder_block_0_digit0_P_P_DIFF_NET_N00765 A0 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_G_G_DIFF_NET_M2        
++  adder_block_0_digit0_G_G_DIFF_NET_N01214 A0 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_G_G_DIFF_NET_M4         adder_block_0_N02092 B0
++  adder_block_0_digit0_G_G_DIFF_NET_N01210
++  adder_block_0_digit0_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_G_G_DIFF_NET_M6         adder_block_0_N02092 B0
++  adder_block_0_digit0_G_G_DIFF_NET_N01214
++  adder_block_0_digit0_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_G_G_DIFF_NET_M1        
++  adder_block_0_digit0_G_G_DIFF_NET_N01210 adder_N03638 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_G_G_DIFF_NET_M3         adder_block_0_N02088
++  adder_N03550 adder_block_0_digit0_G_G_DIFF_NET_N01210
++  adder_block_0_digit0_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_0_digit0_G_G_DIFF_NET_M5         adder_block_0_N02092
++  adder_N03550 adder_block_0_digit0_G_G_DIFF_NET_N01214
++  adder_block_0_digit0_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C3_Co_DIFF_NET_M2        
++  adder_block_2_block_carry_C3_Co_DIFF_NET_N00302 adder_block_2_N02116 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C3_Co_DIFF_NET_M5         adder_block_2_N01621
++  adder_block_2_N01614 adder_block_2_block_carry_C3_Co_DIFF_NET_N00314
++  adder_block_2_block_carry_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C3_Co_DIFF_NET_M3        
++  adder_block_2_block_carry_C3_Co_DIFF_NET_N00314 adder_block_2_N02116
++  adder_block_2_block_carry_C3_Co_DIFF_NET_N00302
++  adder_block_2_block_carry_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C3_Co_DIFF_NET_M6         adder_block_2_N01628
++  adder_block_2_N01607 adder_block_2_block_carry_C3_Co_DIFF_NET_N00314
++  adder_block_2_block_carry_C3_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C3_Co_DIFF_NET_M1         adder_block_2_N01621
++  adder_block_2_N02154 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C3_Co_DIFF_NET_M4         adder_block_2_N01628
++  adder_block_2_N02112 adder_block_2_block_carry_C3_Co_DIFF_NET_N00302
++  adder_block_2_block_carry_C3_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C1_Co_DIFF_NET_M2        
++  adder_block_2_block_carry_C1_Co_DIFF_NET_N00302 adder_block_2_N02088 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C1_Co_DIFF_NET_M5         adder_block_2_N01593
++  adder_N63340 adder_block_2_block_carry_C1_Co_DIFF_NET_N00314
++  adder_block_2_block_carry_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C1_Co_DIFF_NET_M3        
++  adder_block_2_block_carry_C1_Co_DIFF_NET_N00314 adder_block_2_N02084
++  adder_block_2_block_carry_C1_Co_DIFF_NET_N00302
++  adder_block_2_block_carry_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C1_Co_DIFF_NET_M6         adder_block_2_N01600
++  adder_N63325 adder_block_2_block_carry_C1_Co_DIFF_NET_N00314
++  adder_block_2_block_carry_C1_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C1_Co_DIFF_NET_M1         adder_block_2_N01593
++  adder_block_2_N02092 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C1_Co_DIFF_NET_M4         adder_block_2_N01600
++  adder_block_2_N02080 adder_block_2_block_carry_C1_Co_DIFF_NET_N00302
++  adder_block_2_block_carry_C1_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C2_Co_DIFF_NET_M2        
++  adder_block_2_block_carry_C2_Co_DIFF_NET_N00302 adder_block_2_N02104 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C2_Co_DIFF_NET_M5         adder_block_2_N01607
++  adder_block_2_N01600 adder_block_2_block_carry_C2_Co_DIFF_NET_N00314
++  adder_block_2_block_carry_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C2_Co_DIFF_NET_M3        
++  adder_block_2_block_carry_C2_Co_DIFF_NET_N00314 adder_block_2_N02100
++  adder_block_2_block_carry_C2_Co_DIFF_NET_N00302
++  adder_block_2_block_carry_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C2_Co_DIFF_NET_M6         adder_block_2_N01614
++  adder_block_2_N01593 adder_block_2_block_carry_C2_Co_DIFF_NET_N00314
++  adder_block_2_block_carry_C2_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C2_Co_DIFF_NET_M1         adder_block_2_N01607
++  adder_block_2_N02108 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C2_Co_DIFF_NET_M4         adder_block_2_N01614
++  adder_block_2_N02096 adder_block_2_block_carry_C2_Co_DIFF_NET_N00302
++  adder_block_2_block_carry_C2_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C4_Co_DIFF_NET_M2        
++  adder_block_2_block_carry_C4_Co_DIFF_NET_N00302 adder_block_2_N02166 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C4_Co_DIFF_NET_M5         adder_N20431
++  adder_block_2_N01628 adder_block_2_block_carry_C4_Co_DIFF_NET_N00314
++  adder_block_2_block_carry_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C4_Co_DIFF_NET_M3        
++  adder_block_2_block_carry_C4_Co_DIFF_NET_N00314 adder_block_2_N02162
++  adder_block_2_block_carry_C4_Co_DIFF_NET_N00302
++  adder_block_2_block_carry_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C4_Co_DIFF_NET_M6         adder_N07519
++  adder_block_2_N01621 adder_block_2_block_carry_C4_Co_DIFF_NET_N00314
++  adder_block_2_block_carry_C4_Co_DIFF_NET_N00314 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C4_Co_DIFF_NET_M1         adder_N20431
++  adder_block_2_N02170 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_C4_Co_DIFF_NET_M4         adder_N07519
++  adder_block_2_N02158 adder_block_2_block_carry_C4_Co_DIFF_NET_N00302
++  adder_block_2_block_carry_C4_Co_DIFF_NET_N00302 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M5         adder_N61605
++  adder_block_2_N02154 adder_block_2_block_carry_group_G_GG_DIFF_NET_N01677
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M4         adder_N61609
++  adder_block_2_N02158 adder_block_2_block_carry_group_G_GG_DIFF_NET_N01001
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M1         adder_N61605
++  adder_block_2_N02170 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M3        
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N01677 adder_block_2_N02162
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N01001
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N01001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M8         adder_N61609
++  adder_block_2_N02112 adder_block_2_block_carry_group_G_GG_DIFF_NET_N02525
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M7        
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_BREAK_1 adder_block_2_N02116
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N02525
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N02525 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M6        
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N02525 adder_block_2_N02116
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N01677
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N01677 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M2        
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N01001 adder_block_2_N02166 VDD
++  VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M10        
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N02967 adder_block_2_N02104
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_BREAK_1
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M14         adder_N61609
++  adder_block_2_N02088 adder_block_2_block_carry_group_G_GG_DIFF_NET_N03001
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M9         adder_N61605
++  adder_block_2_N02108 adder_block_2_block_carry_group_G_GG_DIFF_NET_BREAK_1
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_BREAK_1 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M13         adder_N61605
++  adder_block_2_N02092 adder_block_2_block_carry_group_G_GG_DIFF_NET_N03001
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N03001 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M12         adder_N61609
++  adder_block_2_N02096 adder_block_2_block_carry_group_G_GG_DIFF_NET_N02967
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_G_GG_DIFF_NET_M11        
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N03001 adder_block_2_N02100
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N02967
++  adder_block_2_block_carry_group_G_GG_DIFF_NET_N02967 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_P_PG_DIFF_NET_M8         adder_N61597
++  adder_block_2_N02084 adder_block_2_block_carry_group_P_PG_DIFF_NET_N03885
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_P_PG_DIFF_NET_M2        
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N02033 adder_block_2_N02084 VDD
++  VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_P_PG_DIFF_NET_M7         adder_N61601
++  adder_block_2_N02080 adder_block_2_block_carry_group_P_PG_DIFF_NET_N03885
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N03885 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_P_PG_DIFF_NET_M4        
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N03861 adder_block_2_N02084
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N02033
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_P_PG_DIFF_NET_M1         adder_N61601
++  adder_block_2_N02080 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_P_PG_DIFF_NET_M3         adder_N61601
++  adder_block_2_N02080 adder_block_2_block_carry_group_P_PG_DIFF_NET_N02033
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N02033 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_P_PG_DIFF_NET_M6        
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N03885 adder_block_2_N02084
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N03861
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_block_carry_group_P_PG_DIFF_NET_M5         adder_N61601
++  adder_block_2_N02080 adder_block_2_block_carry_group_P_PG_DIFF_NET_N03861
++  adder_block_2_block_carry_group_P_PG_DIFF_NET_N03861 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_S_DIFF_NET_M2        
++  adder_block_2_digit2_S_S_DIFF_NET_N00298 adder_block_2_N01607 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_S_DIFF_NET_M5         adder_block_2_digit2_S_N00086
++  adder_block_2_N02116 adder_block_2_digit2_S_S_DIFF_NET_N00298
++  adder_block_2_digit2_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_S_DIFF_NET_M3         adder_block_2_digit2_S_N00090
++  adder_block_2_N02116 adder_block_2_digit2_S_S_DIFF_NET_N00294
++  adder_block_2_digit2_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_S_DIFF_NET_M1        
++  adder_block_2_digit2_S_S_DIFF_NET_N00294 adder_block_2_N01614 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_S_DIFF_NET_M6         adder_block_2_digit2_S_N00090
++  adder_block_2_N02112 adder_block_2_digit2_S_S_DIFF_NET_N00298
++  adder_block_2_digit2_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_S_DIFF_NET_M4         adder_block_2_digit2_S_N00086
++  adder_block_2_N02112 adder_block_2_digit2_S_S_DIFF_NET_N00294
++  adder_block_2_digit2_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_DCML_M4         SB10 S10
++  adder_block_2_digit2_S_DCML_N00757 adder_block_2_digit2_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M9         S10 SB10
++  adder_block_2_digit2_S_DCML_N00714 adder_block_2_digit2_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M14         adder_block_2_digit2_S_DCML_N00753
++  adder_block_2_digit2_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M2         SB10 S10 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_DCML_M7         SB10 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_DCML_M12         adder_block_2_digit2_S_DCML_N00710
++  adder_block_2_digit2_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M5         adder_block_2_digit2_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M10         SB10 S10
++  adder_block_2_digit2_S_DCML_N00753 adder_block_2_digit2_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M15         adder_block_2_digit2_S_DCML_N00745
++  adder_block_2_digit2_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M3         S10 SB10
++  adder_block_2_digit2_S_DCML_N00757 adder_block_2_digit2_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M8         adder_block_2_digit2_S_N00090 S10
++  adder_block_2_digit2_S_DCML_N00710 adder_block_2_digit2_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M13         adder_block_2_digit2_S_DCML_N00714
++  adder_block_2_digit2_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_S_DCML_M1         S10 SB10 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_DCML_M6         S10 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_S_DCML_M11         adder_block_2_digit2_S_N00086 SB10
++  adder_block_2_digit2_S_DCML_N00745 adder_block_2_digit2_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit2_P_P_DIFF_NET_M4         adder_block_2_N02112 B10
++  adder_block_2_digit2_P_P_DIFF_NET_N00761
++  adder_block_2_digit2_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_P_P_DIFF_NET_M6         adder_block_2_N02116 B10
++  adder_block_2_digit2_P_P_DIFF_NET_N00765
++  adder_block_2_digit2_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_P_P_DIFF_NET_M1        
++  adder_block_2_digit2_P_P_DIFF_NET_N00761 A10 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_P_P_DIFF_NET_M3         adder_block_2_N02116
++  adder_N07199 adder_block_2_digit2_P_P_DIFF_NET_N00761
++  adder_block_2_digit2_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_P_P_DIFF_NET_M5         adder_block_2_N02112
++  adder_N07199 adder_block_2_digit2_P_P_DIFF_NET_N00765
++  adder_block_2_digit2_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_P_P_DIFF_NET_M2        
++  adder_block_2_digit2_P_P_DIFF_NET_N00765 A10 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_G_G_DIFF_NET_M2        
++  adder_block_2_digit2_G_G_DIFF_NET_N01214 A10 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_G_G_DIFF_NET_M4         adder_block_2_N02154 B10
++  adder_block_2_digit2_G_G_DIFF_NET_N01210
++  adder_block_2_digit2_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_G_G_DIFF_NET_M6         adder_block_2_N02154 B10
++  adder_block_2_digit2_G_G_DIFF_NET_N01214
++  adder_block_2_digit2_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_G_G_DIFF_NET_M1        
++  adder_block_2_digit2_G_G_DIFF_NET_N01210 A10 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_G_G_DIFF_NET_M3         adder_block_2_N02116
++  adder_N07199 adder_block_2_digit2_G_G_DIFF_NET_N01210
++  adder_block_2_digit2_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit2_G_G_DIFF_NET_M5         adder_block_2_N02154
++  adder_N07199 adder_block_2_digit2_G_G_DIFF_NET_N01214
++  adder_block_2_digit2_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_S_DIFF_NET_M2        
++  adder_block_2_digit1_S_S_DIFF_NET_N00298 adder_block_2_N01593 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_S_DIFF_NET_M5         adder_block_2_digit1_S_N00086
++  adder_block_2_N02100 adder_block_2_digit1_S_S_DIFF_NET_N00298
++  adder_block_2_digit1_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_S_DIFF_NET_M3         adder_block_2_digit1_S_N00090
++  adder_block_2_N02100 adder_block_2_digit1_S_S_DIFF_NET_N00294
++  adder_block_2_digit1_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_S_DIFF_NET_M1        
++  adder_block_2_digit1_S_S_DIFF_NET_N00294 adder_block_2_N01600 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_S_DIFF_NET_M6         adder_block_2_digit1_S_N00090
++  adder_block_2_N02096 adder_block_2_digit1_S_S_DIFF_NET_N00298
++  adder_block_2_digit1_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_S_DIFF_NET_M4         adder_block_2_digit1_S_N00086
++  adder_block_2_N02096 adder_block_2_digit1_S_S_DIFF_NET_N00294
++  adder_block_2_digit1_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_DCML_M4         SB9 S9
++  adder_block_2_digit1_S_DCML_N00757 adder_block_2_digit1_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M9         S9 SB9
++  adder_block_2_digit1_S_DCML_N00714 adder_block_2_digit1_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M14         adder_block_2_digit1_S_DCML_N00753
++  adder_block_2_digit1_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M2         SB9 S9 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_DCML_M7         SB9 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_DCML_M12         adder_block_2_digit1_S_DCML_N00710
++  adder_block_2_digit1_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M5         adder_block_2_digit1_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M10         SB9 S9
++  adder_block_2_digit1_S_DCML_N00753 adder_block_2_digit1_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M15         adder_block_2_digit1_S_DCML_N00745
++  adder_block_2_digit1_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M3         S9 SB9
++  adder_block_2_digit1_S_DCML_N00757 adder_block_2_digit1_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M8         adder_block_2_digit1_S_N00090 S9
++  adder_block_2_digit1_S_DCML_N00710 adder_block_2_digit1_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M13         adder_block_2_digit1_S_DCML_N00714
++  adder_block_2_digit1_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_S_DCML_M1         S9 SB9 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_DCML_M6         S9 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_S_DCML_M11         adder_block_2_digit1_S_N00086 SB9
++  adder_block_2_digit1_S_DCML_N00745 adder_block_2_digit1_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit1_P_P_DIFF_NET_M4         adder_block_2_N02096 B9
++  adder_block_2_digit1_P_P_DIFF_NET_N00761
++  adder_block_2_digit1_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_P_P_DIFF_NET_M6         adder_block_2_N02100 B9
++  adder_block_2_digit1_P_P_DIFF_NET_N00765
++  adder_block_2_digit1_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_P_P_DIFF_NET_M1        
++  adder_block_2_digit1_P_P_DIFF_NET_N00761 A9 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_P_P_DIFF_NET_M3         adder_block_2_N02100
++  adder_N07211 adder_block_2_digit1_P_P_DIFF_NET_N00761
++  adder_block_2_digit1_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_P_P_DIFF_NET_M5         adder_block_2_N02096
++  adder_N07211 adder_block_2_digit1_P_P_DIFF_NET_N00765
++  adder_block_2_digit1_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_P_P_DIFF_NET_M2        
++  adder_block_2_digit1_P_P_DIFF_NET_N00765 A9 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_G_G_DIFF_NET_M2        
++  adder_block_2_digit1_G_G_DIFF_NET_N01214 A9 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_G_G_DIFF_NET_M4         adder_block_2_N02108 B9
++  adder_block_2_digit1_G_G_DIFF_NET_N01210
++  adder_block_2_digit1_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_G_G_DIFF_NET_M6         adder_block_2_N02108 B9
++  adder_block_2_digit1_G_G_DIFF_NET_N01214
++  adder_block_2_digit1_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_G_G_DIFF_NET_M1        
++  adder_block_2_digit1_G_G_DIFF_NET_N01210 A9 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_G_G_DIFF_NET_M3         adder_block_2_N02104
++  adder_N07211 adder_block_2_digit1_G_G_DIFF_NET_N01210
++  adder_block_2_digit1_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit1_G_G_DIFF_NET_M5         adder_block_2_N02108
++  adder_N07211 adder_block_2_digit1_G_G_DIFF_NET_N01214
++  adder_block_2_digit1_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_S_DIFF_NET_M2        
++  adder_block_2_digit3_S_S_DIFF_NET_N00298 adder_block_2_N01621 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_S_DIFF_NET_M5         adder_block_2_digit3_S_N00086
++  adder_block_2_N02162 adder_block_2_digit3_S_S_DIFF_NET_N00298
++  adder_block_2_digit3_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_S_DIFF_NET_M3         adder_block_2_digit3_S_N00090
++  adder_block_2_N02162 adder_block_2_digit3_S_S_DIFF_NET_N00294
++  adder_block_2_digit3_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_S_DIFF_NET_M1        
++  adder_block_2_digit3_S_S_DIFF_NET_N00294 adder_block_2_N01628 VDD VDD
++  pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_S_DIFF_NET_M6         adder_block_2_digit3_S_N00090
++  adder_block_2_N02158 adder_block_2_digit3_S_S_DIFF_NET_N00298
++  adder_block_2_digit3_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_S_DIFF_NET_M4         adder_block_2_digit3_S_N00086
++  adder_block_2_N02158 adder_block_2_digit3_S_S_DIFF_NET_N00294
++  adder_block_2_digit3_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_DCML_M4         SB11 S11
++  adder_block_2_digit3_S_DCML_N00757 adder_block_2_digit3_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M9         S11 SB11
++  adder_block_2_digit3_S_DCML_N00714 adder_block_2_digit3_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M14         adder_block_2_digit3_S_DCML_N00753
++  adder_block_2_digit3_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M2         SB11 S11 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_DCML_M7         SB11 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_DCML_M12         adder_block_2_digit3_S_DCML_N00710
++  adder_block_2_digit3_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M5         adder_block_2_digit3_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M10         SB11 S11
++  adder_block_2_digit3_S_DCML_N00753 adder_block_2_digit3_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M15         adder_block_2_digit3_S_DCML_N00745
++  adder_block_2_digit3_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M3         S11 SB11
++  adder_block_2_digit3_S_DCML_N00757 adder_block_2_digit3_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M8         adder_block_2_digit3_S_N00090 S11
++  adder_block_2_digit3_S_DCML_N00710 adder_block_2_digit3_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M13         adder_block_2_digit3_S_DCML_N00714
++  adder_block_2_digit3_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_S_DCML_M1         S11 SB11 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_DCML_M6         S11 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_S_DCML_M11         adder_block_2_digit3_S_N00086 SB11
++  adder_block_2_digit3_S_DCML_N00745 adder_block_2_digit3_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit3_P_P_DIFF_NET_M4         adder_block_2_N02158 B11
++  adder_block_2_digit3_P_P_DIFF_NET_N00761
++  adder_block_2_digit3_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_P_P_DIFF_NET_M6         adder_block_2_N02162 B11
++  adder_block_2_digit3_P_P_DIFF_NET_N00765
++  adder_block_2_digit3_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_P_P_DIFF_NET_M1        
++  adder_block_2_digit3_P_P_DIFF_NET_N00761 adder_N07283 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_P_P_DIFF_NET_M3         adder_block_2_N02162 B11
++  adder_block_2_digit3_P_P_DIFF_NET_N00761
++  adder_block_2_digit3_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_P_P_DIFF_NET_M5         adder_block_2_N02158 B11
++  adder_block_2_digit3_P_P_DIFF_NET_N00765
++  adder_block_2_digit3_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_P_P_DIFF_NET_M2        
++  adder_block_2_digit3_P_P_DIFF_NET_N00765 A11 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_G_G_DIFF_NET_M2        
++  adder_block_2_digit3_G_G_DIFF_NET_N01214 A11 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_G_G_DIFF_NET_M4         adder_block_2_N02170 B11
++  adder_block_2_digit3_G_G_DIFF_NET_N01210
++  adder_block_2_digit3_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_G_G_DIFF_NET_M6         adder_block_2_N02170 B11
++  adder_block_2_digit3_G_G_DIFF_NET_N01214
++  adder_block_2_digit3_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_G_G_DIFF_NET_M1        
++  adder_block_2_digit3_G_G_DIFF_NET_N01210 adder_N07283 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_G_G_DIFF_NET_M3         adder_block_2_N02166 B11
++  adder_block_2_digit3_G_G_DIFF_NET_N01210
++  adder_block_2_digit3_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit3_G_G_DIFF_NET_M5         adder_block_2_N02170 B11
++  adder_block_2_digit3_G_G_DIFF_NET_N01214
++  adder_block_2_digit3_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_S_DIFF_NET_M2        
++  adder_block_2_digit0_S_S_DIFF_NET_N00298 adder_N63325 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_S_DIFF_NET_M5         adder_block_2_digit0_S_N00086
++  adder_block_2_N02084 adder_block_2_digit0_S_S_DIFF_NET_N00298
++  adder_block_2_digit0_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_S_DIFF_NET_M3         adder_block_2_digit0_S_N00090
++  adder_block_2_N02084 adder_block_2_digit0_S_S_DIFF_NET_N00294
++  adder_block_2_digit0_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_S_DIFF_NET_M1        
++  adder_block_2_digit0_S_S_DIFF_NET_N00294 adder_N63340 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_S_DIFF_NET_M6         adder_block_2_digit0_S_N00090
++  adder_block_2_N02080 adder_block_2_digit0_S_S_DIFF_NET_N00298
++  adder_block_2_digit0_S_S_DIFF_NET_N00298 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_S_DIFF_NET_M4         adder_block_2_digit0_S_N00086
++  adder_block_2_N02080 adder_block_2_digit0_S_S_DIFF_NET_N00294
++  adder_block_2_digit0_S_S_DIFF_NET_N00294 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_DCML_M4         SB8 S8
++  adder_block_2_digit0_S_DCML_N00757 adder_block_2_digit0_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M9         S8 SB8
++  adder_block_2_digit0_S_DCML_N00714 adder_block_2_digit0_S_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M14         adder_block_2_digit0_S_DCML_N00753
++  adder_block_2_digit0_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M2         SB8 S8 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_DCML_M7         SB8 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_DCML_M12         adder_block_2_digit0_S_DCML_N00710
++  adder_block_2_digit0_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M5         adder_block_2_digit0_S_DCML_N00757
++  CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M10         SB8 S8
++  adder_block_2_digit0_S_DCML_N00753 adder_block_2_digit0_S_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M15         adder_block_2_digit0_S_DCML_N00745
++  adder_block_2_digit0_S_DCML_N00745 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M3         S8 SB8
++  adder_block_2_digit0_S_DCML_N00757 adder_block_2_digit0_S_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M8         adder_block_2_digit0_S_N00090 S8
++  adder_block_2_digit0_S_DCML_N00710 adder_block_2_digit0_S_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M13         adder_block_2_digit0_S_DCML_N00714
++  adder_block_2_digit0_S_DCML_N00710 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_S_DCML_M1         S8 SB8 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_DCML_M6         S8 CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_S_DCML_M11         adder_block_2_digit0_S_N00086 SB8
++  adder_block_2_digit0_S_DCML_N00745 adder_block_2_digit0_S_DCML_N00745
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_block_2_digit0_P_P_DIFF_NET_M4         adder_block_2_N02080 B8
++  adder_block_2_digit0_P_P_DIFF_NET_N00761
++  adder_block_2_digit0_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_P_P_DIFF_NET_M6         adder_block_2_N02084 B8
++  adder_block_2_digit0_P_P_DIFF_NET_N00765
++  adder_block_2_digit0_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_P_P_DIFF_NET_M1        
++  adder_block_2_digit0_P_P_DIFF_NET_N00761 adder_N07311 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_P_P_DIFF_NET_M3         adder_block_2_N02084
++  adder_N07223 adder_block_2_digit0_P_P_DIFF_NET_N00761
++  adder_block_2_digit0_P_P_DIFF_NET_N00761 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_P_P_DIFF_NET_M5         adder_block_2_N02080
++  adder_N07223 adder_block_2_digit0_P_P_DIFF_NET_N00765
++  adder_block_2_digit0_P_P_DIFF_NET_N00765 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_P_P_DIFF_NET_M2        
++  adder_block_2_digit0_P_P_DIFF_NET_N00765 A8 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_G_G_DIFF_NET_M2        
++  adder_block_2_digit0_G_G_DIFF_NET_N01214 A8 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_G_G_DIFF_NET_M4         adder_block_2_N02092 B8
++  adder_block_2_digit0_G_G_DIFF_NET_N01210
++  adder_block_2_digit0_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_G_G_DIFF_NET_M6         adder_block_2_N02092 B8
++  adder_block_2_digit0_G_G_DIFF_NET_N01214
++  adder_block_2_digit0_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_G_G_DIFF_NET_M1        
++  adder_block_2_digit0_G_G_DIFF_NET_N01210 adder_N07311 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_G_G_DIFF_NET_M3         adder_block_2_N02088
++  adder_N07223 adder_block_2_digit0_G_G_DIFF_NET_N01210
++  adder_block_2_digit0_G_G_DIFF_NET_N01210 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_block_2_digit0_G_G_DIFF_NET_M5         adder_block_2_N02092
++  adder_N07223 adder_block_2_digit0_G_G_DIFF_NET_N01214
++  adder_block_2_digit0_G_G_DIFF_NET_N01214 pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_DCML_M4         C_OUT_NOT C_OUT adder_DCML_N00757 adder_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M9         C_OUT C_OUT_NOT adder_DCML_N00714 adder_DCML_N00714
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M14         adder_DCML_N00753 adder_DCML_N00745 0 0 nMOS_16nm_PTM 
++  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M2         C_OUT_NOT C_OUT VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_DCML_M7         C_OUT_NOT CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_DCML_M12         adder_DCML_N00710 adder_DCML_N00710 0 0 nMOS_16nm_PTM 
++  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M5         adder_DCML_N00757 CLOCK_1 0 0 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M10         C_OUT_NOT C_OUT adder_DCML_N00753 adder_DCML_N00753
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M15         adder_DCML_N00745 adder_DCML_N00745 0 0 nMOS_16nm_PTM 
++  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M3         C_OUT C_OUT_NOT adder_DCML_N00757 adder_DCML_N00757
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M8         adder_N65829 C_OUT adder_DCML_N00710 adder_DCML_N00710
++  nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M13         adder_DCML_N00714 adder_DCML_N00710 0 0 nMOS_16nm_PTM 
++  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_adder_DCML_M1         C_OUT C_OUT_NOT VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_DCML_M6         C_OUT CLOCK_1 VDD VDD pMOS_16nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_adder_DCML_M11         adder_N65825 C_OUT_NOT adder_DCML_N00745
++  adder_DCML_N00745 nMOS_16nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+.PARAM  n_size_l=30nm p_to_n_ratio=0.975 p_size_w={ p_to_n_ratio * n_size_w }
++  clock_period=1n n_size_w=400nm p_size_l={ n_size_l } vdd_nominal=0.9
+
+**** RESUMING test_01.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N13240.
+

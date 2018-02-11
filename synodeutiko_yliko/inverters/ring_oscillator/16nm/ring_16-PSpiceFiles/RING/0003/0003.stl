@@ -1,0 +1,42 @@
+* C:\USERS\KATERINA\DESKTOP\PTYXIAKI\projects\ring_oscillator\16nm\ring_16-PSpiceFiles\RING\0003\0003.stl written on Tue Oct 10 15:05:03 2017
+* by Stimulus Editor -- Serial Number: 1920102210 -- Version 16.6.0
+;!Stimulus Get
+;! in_ring Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 5ns
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 100ps
+;!YminRes 100m
+;!Ok
+.STIMULUS in_ring PWL
++ TIME_SCALE_FACTOR = 1
++ VALUE_SCALE_FACTOR = 1
++   ( 0, 0 )
++   ( 1e-010, 0.9 )
++   ( 2e-010, 0.9 )
++   ( 3e-010, 0.9 )
++   ( 4e-010, 0 )
++   ( 5e-010, 0 )
++   ( 6e-010, 0 )
++   ( 7e-010, 0 )
++   ( 8e-010, 0 )
++   ( 9e-010, 0 )
++   ( 1e-009, 0 )
++   ( 1.1e-009, 0 )
++   ( 1.2e-009, 0 )
++   ( 1.3e-009, 0 )
++   ( 1.4e-009, 0 )
++   ( 1.5e-009, 0 )
++   ( 1.6e-009, 0 )
++   ( 1.8e-009, -0.1 )
++   ( 1.9e-009, 0 )
++   ( 2e-009, -0.1 )
++   ( 2.1e-009, -0.1 )
++   ( 2.2e-009, 0 )
++   ( 2.3e-009, 0 )
++   ( 3.3e-009, 0 )
++   ( 4.7e-009, 0 )
++   ( 4.8e-009, 0 )
++   ( 5e-009, 0 )

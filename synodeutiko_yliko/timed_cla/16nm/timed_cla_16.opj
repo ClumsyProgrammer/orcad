@@ -1,0 +1,232 @@
+(ExpressProject "timed_cla_16"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\analog.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\capsym.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\ptm_models.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\source.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\sourcstm.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\special.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "timed_cla_16.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (PSPICE_Regenerate_Netlist_Flag "TRUE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\timed_cla_16-pspicefiles\root_select\root_select.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\timed_cla_16-pspicefiles\root_select\test_01.sim"
+        (DisplayName "ROOT_select-test_01")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\timed_cla_16-pspicefiles\root_select\test_01.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "C:\Users\katerina\Desktop\ptyxiaki\ptm_library\PTM_Models.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "C:\Users\katerina\Desktop\ptyxiaki\ptm_library\PTM_Models.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VPWL_F_RE_FOREVER
+      (FullPartName "VPWL_F_RE_FOREVER.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPWL_FILE
+      (FullPartName "VPWL_FILE.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPWL
+      (FullPartName "VPWL.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (nMOS_16nm_PTM
+      (FullPartName "nMOS_16nm_PTM.Normal")
+      (LibraryName
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\PTM_MODELS.OLB")
+      (DeviceIndex "0"))
+    (pMOS_16nm_PTM
+      (FullPartName "pMOS_16nm_PTM.Normal")
+      (LibraryName
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\PTM_MODELS.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SPECIAL.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "katerina")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\katerina\Desktop\ptyxiaki\projects\timed_cla\16nm\timed_cla_16.dsn")
+      (Path "Design Resources"
+         "C:\Users\katerina\Desktop\ptyxiaki\projects\timed_cla\16nm\timed_cla_16.dsn"
+         "ROOT_select")
+      (Path "Design Resources"
+         "C:\Users\katerina\Desktop\ptyxiaki\projects\timed_cla\16nm\timed_cla_16.dsn"
+         "CARRY_UNIT")
+      (Path "Design Resources"
+         "C:\Users\katerina\Desktop\ptyxiaki\projects\timed_cla\16nm\timed_cla_16.dsn"
+         "GG_TREE")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 554"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 971 78 326")
+        (Scroll "0 156")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "ROOT_select")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1001 104 356")
+        (Scroll "0 600")
+        (Zoom "100")
+        (Occurrence "/adder"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "CLA_ADDER")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 897 0 252")
+        (Scroll "0 310")
+        (Zoom "100")
+        (Occurrence "/adder/block_3"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "CLA_BLOCK")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 923 26 278")
+        (Scroll "0 386")
+        (Zoom "100")
+        (Occurrence "/adder/block_3/block_carry"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "CARRY_UNIT")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 949 52 304")
+        (Scroll "0 300")
+        (Zoom "100")
+        (Occurrence "/adder/block_0/block_carry"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "CARRY_UNIT")
+      (Page "PAGE2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 975 78 330")
+        (Scroll "0 70")
+        (Zoom "100")
+        (Occurrence "/adder/block_0/block_carry/group_P"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "PG_GATE")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1001 104 356")
+        (Scroll "0 396")
+        (Zoom "100")
+        (Occurrence "/adder/block_0/block_carry/group_P/PG_DIFF_NET"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "PG_TREE")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 897 0 252")
+        (Scroll "-252 115")
+        (Zoom "48")
+        (Occurrence "/adder/block_0/block_carry/group_G"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "GG_GATE")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 923 26 278")
+        (Scroll "0 410")
+        (Zoom "100")
+        (Occurrence "/adder/block_0/block_carry/group_G/GG_DIFF_NET"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "GG_TREE")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 949 52 304")
+        (Scroll "0 430")
+        (Zoom "100")
+        (Occurrence "/adder/block_0/block_carry/group_G/GG_DIFF_NET"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PROJECTS\TIMED_CLA\16NM\TIMED_CLA_16.DSN")
+      (Schematic "GG_TREE")
+      (Page "PAGE2"))))

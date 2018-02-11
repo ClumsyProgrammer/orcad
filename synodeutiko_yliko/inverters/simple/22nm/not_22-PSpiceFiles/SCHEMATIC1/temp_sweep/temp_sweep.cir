@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-temp_sweep"  [ C:\USERS\KATERINA\DESKTOP\synodeutiko_yliko\inverters\simple\22nm\not_22-PSpiceFiles\SCHEMATIC1\temp_sweep.sim ] 
+
+** Creating circuit file "temp_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/synodeutiko_yliko/ptm_library/PTM_Models.lib" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 
+.TEMP 0 20 40 60 80
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

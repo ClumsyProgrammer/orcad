@@ -1,0 +1,21 @@
+** Profile: "RING-simple"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\22nm\ring_22-PSpiceFiles\RING\simple.sim ] 
+
+** Creating circuit file "simple.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+.STMLIB "../../../ring_22-pspicefiles/ring_22.stl" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\RING.net" 
+
+
+.END

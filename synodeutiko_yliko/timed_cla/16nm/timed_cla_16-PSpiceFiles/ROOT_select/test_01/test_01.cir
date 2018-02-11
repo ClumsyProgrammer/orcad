@@ -1,0 +1,20 @@
+** Profile: "ROOT_select-test_01"  [ C:\Users\katerina\Desktop\ptyxiaki\projects\new_cla_5\cla_adder_16-pspicefiles\root_select\test_01.sim ] 
+
+** Creating circuit file "test_01.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\ROOT_select.net" 
+
+
+.END

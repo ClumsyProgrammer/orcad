@@ -1,0 +1,262 @@
+
+**** 10/21/17 12:55:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-power"  [ C:\USERS\KATERINA\DESKTOP\synodeutiko_yliko\inverters\simple\22nm\not_22-PSpiceFiles\SCHEMATIC1\po
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "power.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/synodeutiko_yliko/ptm_library/PTM_Models.lib" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source NOT_22
+M_M1         OUT IN N00115 N00115 pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_M2         OUT IN 0 0 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+C_C1         0 OUT  1f  TC=0,0 
+V_A         IN 0  
++PULSE 0 {vdd_nominal} 0 70p 10p 0.5n 1n
+V_Vin         N00115 0 {vdd_nominal}
+.PARAM  n_size_l=30nm p_to_n_ratio=1 p_size_w={ p_to_n_ratio * n_size_w }
++  n_size_w=400nm p_size_l={n_size_l} vdd_nominal=0.95
+
+**** RESUMING power.cir ****
+.END
+
+**** 10/21/17 12:55:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-power"  [ C:\USERS\KATERINA\DESKTOP\synodeutiko_yliko\inverters\simple\22nm\not_22-PSpiceFiles\SCHEMATIC1\po
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               pMOS_22nm_PTM   nMOS_22nm_PTM   
+               PMOS            NMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    5               5            
+           L   30.000000E-09   30.000000E-09 
+           W   30.000000E-09   30.000000E-09 
+         VTO    -.98666          .98666      
+          KP   42.000000E-06   42.000000E-06 
+       GAMMA    1               1            
+         PHI     .7              .7          
+      LAMBDA     .5              .5          
+         RSH    5               5            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO   65.000000E-12   65.000000E-12 
+        CGDO   65.000000E-12   65.000000E-12 
+        CGBO   25.600000E-12   25.600000E-12 
+         TOX  100.000000E-09  100.000000E-09 
+          XJ    7.200000E-09    7.200000E-09 
+       DELTA     .01             .01         
+      DIOMOD    1               1            
+         VFB    -.55            -.55         
+          K1     .4              .4          
+          K2    -.01            0            
+        LETA     .1              .1          
+        WETA     .25             .25         
+          U0     .011            .035        
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+        VTH0    -.63745          .68858      
+          K3    0               0            
+        DVT0    1               1            
+        DVT1    2               2            
+          UA    2.000000E-09  600.000000E-12 
+          UB  500.000000E-21    1.200000E-18 
+          UC    0               0            
+        VSAT  170.000000E+03  170.000000E+03 
+        RDSW  230             180            
+        VOFF    -.09            -.1092       
+     NFACTOR    1.8             1.6          
+        CDSC    0               0            
+        PCLM     .12             .02         
+      PDIBL1    1.000000E-03    1.000000E-03 
+      PDIBL2    1.000000E-03    1.000000E-03 
+       DROUT                     .5          
+      PSCBE1  814.000000E+06  814.000000E+06 
+      PSCBE2  958.000000E-09  100.000000E-09 
+          A0    1               1            
+          A1    0               0            
+          A2    1               1            
+         UA1    4.310000E-09    4.310000E-09 
+         UB1    7.610000E-18    7.610000E-18 
+         UC1  -56.000000E-12  -56.000000E-12 
+        PVAG   10.000000E-21   10.000000E-21 
+        KETA                     .04         
+        ETA0     .0105           .0105       
+        ETAB    0               0            
+        DVT2                    0            
+        DSUB     .1              .1          
+       NGATE  100.000000E+21  100.000000E+21 
+      MOBMOD    0               0            
+         AGS   10.000000E-21                 
+       DVT1W    0               0            
+       DVT2W    0               0            
+        PRWG    0               0            
+     PDIBLCB   34.000000E-09   -5.000000E-03 
+      ALPHA0     .074            .074        
+        CGSL  265.300000E-12  265.300000E-12 
+        CGDL  265.300000E-12  265.300000E-12 
+        WINT    5.000000E-09    5.000000E-09 
+    PARAMCHK    1               1            
+     VERSION    4               4            
+      ALPHA1    5.000000E-03    5.000000E-03 
+        TOXM    1.420000E-09    1.400000E-09 
+         TPB    5.000000E-03    5.000000E-03 
+         TCJ    1.000000E-03    1.000000E-03 
+       TPBSW    5.000000E-03    5.000000E-03 
+       TCJSW    1.000000E-03    1.000000E-03 
+      TPBSWG    5.000000E-03    5.000000E-03 
+      TCJSWG    1.000000E-03    1.000000E-03 
+        NOFF     .9              .9          
+      VOFFCV     .02             .02         
+         COX  700.000000E-06  700.000000E-06 
+          E0    1.000000E+12    1.000000E+12 
+    rbodyMod    1               1            
+    rgateMod    1               1            
+      geoMod    1               1            
+      igcMod    1               1            
+      igbMod    1               1            
+        toxe    1.400000E-09    1.400000E-09 
+        toxp    1.080000E-09    1.100000E-09 
+        dtox  320.000000E-12  300.000000E-12 
+        ndep    4.400000E+18    5.500000E+18 
+         nsd  200.000000E+18  200.000000E+18 
+       dvtp0   10.000000E-12   10.000000E-12 
+       dvtp1     .05             .1          
+        lpe0    0               0            
+        minv     .05             .05         
+         rsw   72.5            75            
+         rdw   72.5            75            
+      fprout     .2              .2          
+       pdits     .08             .01         
+      pditsd     .23             .23         
+      pditsl    2.300000E+06    2.300000E+06 
+       agidl  200.000000E-06  200.000000E-06 
+       bgidl    2.100000E+09    2.100000E+09 
+       cgidl  200.000000E-06  200.000000E-06 
+        aigc    9.700000E-03     .015211     
+        bigc    1.250000E-03    2.743200E-03 
+        cigc  800.000000E-06    2.000000E-03 
+       aigsd    9.700000E-03     .015211     
+       bigsd    1.250000E-03    2.743200E-03 
+       cigsd  800.000000E-06    2.000000E-03 
+     aigbacc     .012            .012        
+     bigbacc    2.800000E-03    2.800000E-03 
+     cigbacc    2.000000E-03    2.000000E-03 
+     aigbinv     .014            .014        
+     bigbinv    4.000000E-03    4.000000E-03 
+     cigbinv    4.000000E-03    4.000000E-03 
+      xrcrg2    5               5            
+      toxref    1.420000E-09    1.400000E-09 
+    ijthdfwd     .01             .01         
+    ijthsfwd     .01             .01         
+    ijthdrev    1.000000E-03    1.000000E-03 
+    ijthsrev    1.000000E-03    1.000000E-03 
+       gbmin  100.000000E-12  100.000000E-12 
+        rbdb   15              15            
+        rbsb   15              15            
+        rbpb    5               5            
+        rbps   15              15            
+        rbpd   15              15            
+     ckappas     .03             .03         
+     ckappad     .03             .03         
+         dwj    0               0            
+        rshg     .4              .4          
+      CJSWGD  500.000000E-12  500.000000E-12 
+      PBSWGD    1               1            
+      MJSWGD     .33             .33         
+      CJSWGS  300.000000E-12  300.000000E-12 
+      PBSWGS    1               1            
+      MJSWGS     .33             .33         
+        JSWS   10.000000E-12   10.000000E-12 
+       JSWGS  100.000000E-12  100.000000E-12 
+        JSWD   10.000000E-12   10.000000E-12 
+       JSWGD  100.000000E-12  100.000000E-12 
+
+
+**** 10/21/17 12:55:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-power"  [ C:\USERS\KATERINA\DESKTOP\synodeutiko_yliko\inverters\simple\22nm\not_22-PSpiceFiles\SCHEMATIC1\po
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT)     .9497  (N00115)     .9500 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_A          0.000E+00
+    V_Vin       -5.683E-08
+
+    TOTAL POWER DISSIPATION   5.40E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/21/17 12:55:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-power"  [ C:\USERS\KATERINA\DESKTOP\synodeutiko_yliko\inverters\simple\22nm\not_22-PSpiceFiles\SCHEMATIC1\po
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

@@ -1,0 +1,20 @@
+** Profile: "CHAIN-power"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\CHAIN\45nm\chain_45-PSpiceFiles\CHAIN\power.sim ] 
+
+** Creating circuit file "power.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/synodeutiko_yliko/ptm_library/PTM_Models.lib" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\CHAIN.net" 
+
+
+.END

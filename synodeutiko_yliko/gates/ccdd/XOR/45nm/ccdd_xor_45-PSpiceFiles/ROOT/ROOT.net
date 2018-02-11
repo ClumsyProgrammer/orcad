@@ -1,0 +1,129 @@
+* source CCDD_XOR_45
+C_C3         0 N20409  1f  TC=0,0 
+C_C4         0 N20361  1f  TC=0,0 
+V_B         N20923 0  
++PULSE {vdd_nominal} 0 0 10p 10p 4n 8n
+C_C2         0 N01229  1f  TC=0,0 
+V_C         N20935 0  
++PULSE {vdd_nominal} 0 0 10p 10p 8n 16n
+M_ccdd_gate_not_R_M2         N20361 N20409 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_R_M1         N20361 N20409 N01008 N01008 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_M1         N12507 N20409 N01008 N01008 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_M2         N12507 CLK N01008 N01008 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_not_B_M2         ccdd_gate_N07012 N20923 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_B_M1         ccdd_gate_N07012 N20923 N01008 N01008
++  pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_not_D_M2         ccdd_gate_N07028 N20947 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_D_M1         ccdd_gate_N07028 N20947 N01008 N01008
++  pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_not_A_M2         ccdd_gate_N07004 N20911 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_A_M1         ccdd_gate_N07004 N20911 N01008 N01008
++  pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_M4         N20409 N12507 N01008 N01008 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_M5         ccdd_gate_N06401 CLK 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_M3         N20409 CLK N01008 N01008 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_not_L_M2         N01229 N12507 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_L_M1         N01229 N12507 N01008 N01008 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_xor/xnor_M2         ccdd_gate_xor/xnor_N00723 N20911
++  ccdd_gate_N06401 ccdd_gate_N06401 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M7         ccdd_gate_xor/xnor_N00763 ccdd_gate_N07020
++  ccdd_gate_xor/xnor_N00809 ccdd_gate_xor/xnor_N00809 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M9         ccdd_gate_xor/xnor_N00767 ccdd_gate_N07020
++  ccdd_gate_xor/xnor_N00739 ccdd_gate_xor/xnor_N00739 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M11         N12507 ccdd_gate_N07028
++  ccdd_gate_xor/xnor_N00763 ccdd_gate_xor/xnor_N00763 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M10         ccdd_gate_xor/xnor_N00767 N20935
++  ccdd_gate_xor/xnor_N00809 ccdd_gate_xor/xnor_N00809 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M3         ccdd_gate_xor/xnor_N00739 ccdd_gate_N07012
++  ccdd_gate_xor/xnor_N00723 ccdd_gate_xor/xnor_N00723 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M5         ccdd_gate_xor/xnor_N00809 ccdd_gate_N07012
++  ccdd_gate_xor/xnor_N00719 ccdd_gate_xor/xnor_N00719 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M14         N12507 N20947 ccdd_gate_xor/xnor_N00767
++  ccdd_gate_xor/xnor_N00767 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M6         ccdd_gate_xor/xnor_N00739 N20923
++  ccdd_gate_xor/xnor_N00719 ccdd_gate_xor/xnor_N00719 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M13         N20409 ccdd_gate_N07028
++  ccdd_gate_xor/xnor_N00767 ccdd_gate_xor/xnor_N00767 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M12         N20409 N20947 ccdd_gate_xor/xnor_N00763
++  ccdd_gate_xor/xnor_N00763 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M4         ccdd_gate_xor/xnor_N00809 N20923
++  ccdd_gate_xor/xnor_N00723 ccdd_gate_xor/xnor_N00723 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M8         ccdd_gate_xor/xnor_N00763 N20935
++  ccdd_gate_xor/xnor_N00739 ccdd_gate_xor/xnor_N00739 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M1         ccdd_gate_xor/xnor_N00719 ccdd_gate_N07004
++  ccdd_gate_N06401 ccdd_gate_N06401 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_C_M2         ccdd_gate_N07020 N20935 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_C_M1         ccdd_gate_N07020 N20935 N01008 N01008
++  pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+C_C1         0 N12507  1f  TC=0,0 
+V_CLK         CLK 0  
++PULSE {vdd_nominal} 0 0 10p 10p 0.5n 1n
+V_D         N20947 0  
++PULSE {vdd_nominal} 0 0 10p 10p 16n 32n
+V_VDD         N01008 0 {vdd_nominal}
+V_A         N20911 0  
++PULSE {vdd_nominal} 0 0 10p 10p 2n 4n
+.PARAM  n_size_l=50nm p_to_n_ratio=1.44 p_size_w={ p_to_n_ratio * n_size_w }
++  n_size_w=800nm p_size_l={n_size_l} vdd_nominal=1.1

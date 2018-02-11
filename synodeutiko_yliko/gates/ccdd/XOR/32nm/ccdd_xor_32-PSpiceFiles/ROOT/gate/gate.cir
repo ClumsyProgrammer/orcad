@@ -1,0 +1,21 @@
+** Profile: "ROOT-gate"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\gates\ccdd\XOR\32nm\ccdd_xor_32-PSpiceFiles\ROOT\gate.sim ] 
+
+** Creating circuit file "gate.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+.STMLIB "../../../ccdd_xor_32-pspicefiles/ccdd_xor_32.stl" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 6ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\ROOT.net" 
+
+
+.END

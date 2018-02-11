@@ -1,0 +1,133 @@
+* source DCML_XOR_32
+M_XOR/XNOR_M4         XOR/XNOR_N00739 B XOR/XNOR_N00719 XOR/XNOR_N00719
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M2         XOR/XNOR_N00723 A N01008 N01008 pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M13         N00980 N06437 XOR/XNOR_N00767 XOR/XNOR_N00767
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M11         N00976 N06437 XOR/XNOR_N00763 XOR/XNOR_N00763
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M9         XOR/XNOR_N00767 N06388 XOR/XNOR_N00739 XOR/XNOR_N00739
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M7         XOR/XNOR_N00763 N06388 XOR/XNOR_N00809 XOR/XNOR_N00809
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M5         XOR/XNOR_N00739 N06384 XOR/XNOR_N00723 XOR/XNOR_N00723
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M3         XOR/XNOR_N00809 N06384 XOR/XNOR_N00719 XOR/XNOR_N00719
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M1         XOR/XNOR_N00719 N06280 N01008 N01008 pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M14         N00976 D XOR/XNOR_N00767 XOR/XNOR_N00767 pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M12         N00980 D XOR/XNOR_N00763 XOR/XNOR_N00763 pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M10         XOR/XNOR_N00767 C XOR/XNOR_N00809 XOR/XNOR_N00809
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M8         XOR/XNOR_N00763 C XOR/XNOR_N00739 XOR/XNOR_N00739
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_XOR/XNOR_M6         XOR/XNOR_N00809 B XOR/XNOR_N00723 XOR/XNOR_N00723
++  pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+C_C2         0 N00984  1f  TC=0,0 
+M_DCML_M7         N00984 CLK N01008 N01008 pMOS_32nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_DCML_M15         DCML_N12198 DCML_N12198 0 0 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M4         N00984 N12507 DCML_N12214 DCML_N12214 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M10         N00984 N12507 DCML_N12208 DCML_N12208 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M1         N12507 N00984 N01008 N01008 pMOS_32nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_DCML_M13         DCML_N12188 DCML_N12182 0 0 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M2         N00984 N12507 N01008 N01008 pMOS_32nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_DCML_M3         N12507 N00984 DCML_N12214 DCML_N12214 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M11         N00980 N00984 DCML_N12198 DCML_N12198 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M5         DCML_N12214 CLK 0 0 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M12         DCML_N12182 DCML_N12182 0 0 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M8         N00976 N12507 DCML_N12182 DCML_N12182 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M6         N12507 CLK N01008 N01008 pMOS_32nm_PTM  
++ L={ p_size_l }  
++ W={ p_size_w }         
+M_DCML_M14         DCML_N12208 DCML_N12198 0 0 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+M_DCML_M9         N12507 N00984 DCML_N12188 DCML_N12188 nMOS_32nm_PTM  
++ L={ n_size_l }  
++ W={ n_size_w }         
+C_C1         0 N12507  1f  TC=0,0 
+V_VDD         N01008 0 {vdd_nominal}
+M_not_A_M2         N06280 A 0 0 nMOS_32nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_A_M1         N06280 A N01008 N01008 pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+V_CLK         CLK 0  
++PULSE {vdd_nominal} 0 0 10p 10p 0.5n 1n
+V_V1         A 0   STIMULUS=stim_A
+V_V2         B 0   STIMULUS=stim_B
+V_V3         C 0   STIMULUS=stim_C
+V_V4         D 0   STIMULUS=stim_D
+M_not_B_M2         N06384 B 0 0 nMOS_32nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_B_M1         N06384 B N01008 N01008 pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_C_M2         N06388 C 0 0 nMOS_32nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_C_M1         N06388 C N01008 N01008 pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_D_M2         N06437 D 0 0 nMOS_32nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_D_M1         N06437 D N01008 N01008 pMOS_32nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+.PARAM  n_size_l=50nm p_to_n_ratio=1.15 p_size_w={ p_to_n_ratio * n_size_w }
++  n_size_w=800nm p_size_l={n_size_l} vdd_nominal=1.5

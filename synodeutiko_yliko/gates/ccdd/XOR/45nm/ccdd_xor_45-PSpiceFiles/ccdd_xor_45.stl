@@ -1,0 +1,16 @@
+* C:\Users\katerina\Desktop\ptyxiaki\projects\xor\16nm\dcml_xor_4_16-PSpiceFiles\DCML_XOR_4_16.stl written on Tue Oct 10 16:39:21 2017
+* by Stimulus Editor -- Serial Number: 1920102210 -- Version 16.6.0
+;!Stimulus Get
+;! stim_D Analog stim_C Analog stim_B Analog stim_A Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 16ns
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 100ps
+;!YminRes 100m
+;!Ok
+.STIMULUS stim_D PULSE( 0 1.1 0 10p 70p 8n 16n )
+.STIMULUS stim_C PULSE( 0 1.1 0 10p 70p 4n 8n )
+.STIMULUS stim_B PULSE( 0 1.1 0 10p 70p 2n 4n )
+.STIMULUS stim_A PULSE( 0 1.1 0 10p 70p 1n 2n )

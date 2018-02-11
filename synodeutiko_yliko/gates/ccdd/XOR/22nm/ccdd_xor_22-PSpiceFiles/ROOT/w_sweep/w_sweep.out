@@ -1,0 +1,608 @@
+
+**** 10/21/17 20:27:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT-w_sweep"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\22nm\ccdd_xor_22-PSpiceFiles\ROOT\w_sweep.s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "w_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+.STMLIB "../../../ccdd_xor_22-pspicefiles/ccdd_xor_22.stl" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 
+.STEP LIN PARAM n_size_w 400nm 800nm 100nm 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\ROOT.net" 
+
+
+
+**** INCLUDING ROOT.net ****
+* source CCDD_XOR_22
+C_C3         0 N20409  1f  TC=0,0 
+C_C4         0 N20361  1f  TC=0,0 
+V_B         N20923 0  
++PULSE {vdd_nominal} 0 0 10p 10p 4n 8n
+C_C2         0 N01229  1f  TC=0,0 
+V_C         N20935 0  
++PULSE {vdd_nominal} 0 0 10p 10p 8n 16n
+M_ccdd_gate_not_R_M2         N20361 N20409 0 0 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_R_M1         N20361 N20409 N01008 N01008 pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_M1         N12507 N20409 N01008 N01008 pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_M2         N12507 CLK N01008 N01008 pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_not_B_M2         ccdd_gate_N07012 N20923 0 0 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_B_M1         ccdd_gate_N07012 N20923 N01008 N01008
++  pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_not_D_M2         ccdd_gate_N07028 N20947 0 0 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_D_M1         ccdd_gate_N07028 N20947 N01008 N01008
++  pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_not_A_M2         ccdd_gate_N07004 N20911 0 0 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_A_M1         ccdd_gate_N07004 N20911 N01008 N01008
++  pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_M4         N20409 N12507 N01008 N01008 pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_M5         ccdd_gate_N06401 CLK 0 0 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_M3         N20409 CLK N01008 N01008 pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_not_L_M2         N01229 N12507 0 0 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_L_M1         N01229 N12507 N01008 N01008 pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_ccdd_gate_xor/xnor_M2         ccdd_gate_xor/xnor_N00723 N20911
++  ccdd_gate_N06401 ccdd_gate_N06401 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M7         ccdd_gate_xor/xnor_N00763 ccdd_gate_N07020
++  ccdd_gate_xor/xnor_N00809 ccdd_gate_xor/xnor_N00809 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M9         ccdd_gate_xor/xnor_N00767 ccdd_gate_N07020
++  ccdd_gate_xor/xnor_N00739 ccdd_gate_xor/xnor_N00739 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M11         N12507 ccdd_gate_N07028
++  ccdd_gate_xor/xnor_N00763 ccdd_gate_xor/xnor_N00763 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M10         ccdd_gate_xor/xnor_N00767 N20935
++  ccdd_gate_xor/xnor_N00809 ccdd_gate_xor/xnor_N00809 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M3         ccdd_gate_xor/xnor_N00739 ccdd_gate_N07012
++  ccdd_gate_xor/xnor_N00723 ccdd_gate_xor/xnor_N00723 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M5         ccdd_gate_xor/xnor_N00809 ccdd_gate_N07012
++  ccdd_gate_xor/xnor_N00719 ccdd_gate_xor/xnor_N00719 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M14         N12507 N20947 ccdd_gate_xor/xnor_N00767
++  ccdd_gate_xor/xnor_N00767 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M6         ccdd_gate_xor/xnor_N00739 N20923
++  ccdd_gate_xor/xnor_N00719 ccdd_gate_xor/xnor_N00719 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M13         N20409 ccdd_gate_N07028
++  ccdd_gate_xor/xnor_N00767 ccdd_gate_xor/xnor_N00767 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M12         N20409 N20947 ccdd_gate_xor/xnor_N00763
++  ccdd_gate_xor/xnor_N00763 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M4         ccdd_gate_xor/xnor_N00809 N20923
++  ccdd_gate_xor/xnor_N00723 ccdd_gate_xor/xnor_N00723 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M8         ccdd_gate_xor/xnor_N00763 N20935
++  ccdd_gate_xor/xnor_N00739 ccdd_gate_xor/xnor_N00739 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_xor/xnor_M1         ccdd_gate_xor/xnor_N00719 ccdd_gate_N07004
++  ccdd_gate_N06401 ccdd_gate_N06401 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_C_M2         ccdd_gate_N07020 N20935 0 0 nMOS_22nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_ccdd_gate_not_C_M1         ccdd_gate_N07020 N20935 N01008 N01008
++  pMOS_22nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+C_C1         0 N12507  1f  TC=0,0 
+V_CLK         CLK 0  
++PULSE {vdd_nominal} 0 0 10p 10p 0.5n 1n
+V_D         N20947 0  
++PULSE {vdd_nominal} 0 0 10p 10p 16n 32n
+V_VDD         N01008 0 {vdd_nominal}
+V_A         N20911 0  
++PULSE {vdd_nominal} 0 0 10p 10p 2n 4n
+.PARAM  n_size_l=30nm p_to_n_ratio=1 p_size_w={ p_to_n_ratio * n_size_w }
++  n_size_w=400nm p_size_l={n_size_l} vdd_nominal=0.95
+
+**** RESUMING w_sweep.cir ****
+.END
+
+**** 10/21/17 20:27:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT-w_sweep"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\22nm\ccdd_xor_22-PSpiceFiles\ROOT\w_sweep.s
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nMOS_22nm_PTM   pMOS_22nm_PTM   
+               NMOS            PMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    5               5            
+           L   30.000000E-09   30.000000E-09 
+           W   30.000000E-09   30.000000E-09 
+         VTO     .98666         -.98666      
+          KP   42.000000E-06   42.000000E-06 
+       GAMMA    1               1            
+         PHI     .7              .7          
+      LAMBDA     .5              .5          
+         RSH    5               5            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO   65.000000E-12   65.000000E-12 
+        CGDO   65.000000E-12   65.000000E-12 
+        CGBO   25.600000E-12   25.600000E-12 
+         TOX  100.000000E-09  100.000000E-09 
+          XJ    7.200000E-09    7.200000E-09 
+       DELTA     .01             .01         
+      DIOMOD    1               1            
+         VFB    -.55            -.55         
+          K1     .4              .4          
+          K2    0               -.01         
+        LETA     .1              .1          
+        WETA     .25             .25         
+          U0     .035            .011        
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+        VTH0     .68858         -.63745      
+          K3    0               0            
+        DVT0    1               1            
+        DVT1    2               2            
+          UA  600.000000E-12    2.000000E-09 
+          UB    1.200000E-18  500.000000E-21 
+          UC    0               0            
+        VSAT  170.000000E+03  170.000000E+03 
+        RDSW  180             230            
+        VOFF    -.1092          -.09         
+     NFACTOR    1.6             1.8          
+        CDSC    0               0            
+        PCLM     .02             .12         
+      PDIBL1    1.000000E-03    1.000000E-03 
+      PDIBL2    1.000000E-03    1.000000E-03 
+       DROUT     .5                          
+      PSCBE1  814.000000E+06  814.000000E+06 
+      PSCBE2  100.000000E-09  958.000000E-09 
+          A0    1               1            
+          A1    0               0            
+          A2    1               1            
+         UA1    4.310000E-09    4.310000E-09 
+         UB1    7.610000E-18    7.610000E-18 
+         UC1  -56.000000E-12  -56.000000E-12 
+        PVAG   10.000000E-21   10.000000E-21 
+        KETA     .04                         
+        ETA0     .0105           .0105       
+        ETAB    0               0            
+        DVT2    0                            
+        DSUB     .1              .1          
+       NGATE  100.000000E+21  100.000000E+21 
+      MOBMOD    0               0            
+         AGS                   10.000000E-21 
+       DVT1W    0               0            
+       DVT2W    0               0            
+        PRWG    0               0            
+     PDIBLCB   -5.000000E-03   34.000000E-09 
+      ALPHA0     .074            .074        
+        CGSL  265.300000E-12  265.300000E-12 
+        CGDL  265.300000E-12  265.300000E-12 
+        WINT    5.000000E-09    5.000000E-09 
+    PARAMCHK    1               1            
+     VERSION    4               4            
+      ALPHA1    5.000000E-03    5.000000E-03 
+        TOXM    1.400000E-09    1.420000E-09 
+         TPB    5.000000E-03    5.000000E-03 
+         TCJ    1.000000E-03    1.000000E-03 
+       TPBSW    5.000000E-03    5.000000E-03 
+       TCJSW    1.000000E-03    1.000000E-03 
+      TPBSWG    5.000000E-03    5.000000E-03 
+      TCJSWG    1.000000E-03    1.000000E-03 
+        NOFF     .9              .9          
+      VOFFCV     .02             .02         
+         COX  700.000000E-06  700.000000E-06 
+          E0    1.000000E+12    1.000000E+12 
+    rbodyMod    1               1            
+    rgateMod    1               1            
+      geoMod    1               1            
+      igcMod    1               1            
+      igbMod    1               1            
+        toxe    1.400000E-09    1.400000E-09 
+        toxp    1.100000E-09    1.080000E-09 
+        dtox  300.000000E-12  320.000000E-12 
+        ndep    5.500000E+18    4.400000E+18 
+         nsd  200.000000E+18  200.000000E+18 
+       dvtp0   10.000000E-12   10.000000E-12 
+       dvtp1     .1              .05         
+        lpe0    0               0            
+        minv     .05             .05         
+         rsw   75              72.5          
+         rdw   75              72.5          
+      fprout     .2              .2          
+       pdits     .01             .08         
+      pditsd     .23             .23         
+      pditsl    2.300000E+06    2.300000E+06 
+       agidl  200.000000E-06  200.000000E-06 
+       bgidl    2.100000E+09    2.100000E+09 
+       cgidl  200.000000E-06  200.000000E-06 
+        aigc     .015211        9.700000E-03 
+        bigc    2.743200E-03    1.250000E-03 
+        cigc    2.000000E-03  800.000000E-06 
+       aigsd     .015211        9.700000E-03 
+       bigsd    2.743200E-03    1.250000E-03 
+       cigsd    2.000000E-03  800.000000E-06 
+     aigbacc     .012            .012        
+     bigbacc    2.800000E-03    2.800000E-03 
+     cigbacc    2.000000E-03    2.000000E-03 
+     aigbinv     .014            .014        
+     bigbinv    4.000000E-03    4.000000E-03 
+     cigbinv    4.000000E-03    4.000000E-03 
+      xrcrg2    5               5            
+      toxref    1.400000E-09    1.420000E-09 
+    ijthdfwd     .01             .01         
+    ijthsfwd     .01             .01         
+    ijthdrev    1.000000E-03    1.000000E-03 
+    ijthsrev    1.000000E-03    1.000000E-03 
+       gbmin  100.000000E-12  100.000000E-12 
+        rbdb   15              15            
+        rbsb   15              15            
+        rbpb    5               5            
+        rbps   15              15            
+        rbpd   15              15            
+     ckappas     .03             .03         
+     ckappad     .03             .03         
+         dwj    0               0            
+        rshg     .4              .4          
+      CJSWGD  500.000000E-12  500.000000E-12 
+      PBSWGD    1               1            
+      MJSWGD     .33             .33         
+      CJSWGS  300.000000E-12  300.000000E-12 
+      PBSWGS    1               1            
+      MJSWGS     .33             .33         
+        JSWS   10.000000E-12   10.000000E-12 
+       JSWGS  100.000000E-12  100.000000E-12 
+        JSWD   10.000000E-12   10.000000E-12 
+       JSWGD  100.000000E-12  100.000000E-12 
+
+
+Model-Specific Temperatures During Sweep  Param value = 4e-007
+
+**** 10/21/17 20:27:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT-w_sweep"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\22nm\ccdd_xor_22-PSpiceFiles\ROOT\w_sweep.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  400.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  CLK)     .9500  (N01008)     .9500 (N01229)     .9483 (N12507)     .0488     
+
+(N20361) 474.6E-06 (N20409)     .9392 (N20911)     .9500 (N20923)     .9500     
+
+(N20935)     .9500 (N20947)     .9500 (ccdd_gate_N06401)     .0102              
+
+(ccdd_gate_N07004) 327.5E-06          (ccdd_gate_N07012) 327.5E-06              
+
+(ccdd_gate_N07020) 327.5E-06          (ccdd_gate_N07028) 327.5E-06              
+
+(ccdd_gate_xor/xnor_N00719)     .4673 (ccdd_gate_xor/xnor_N00723)     .0207     
+
+(ccdd_gate_xor/xnor_N00739)     .4801 (ccdd_gate_xor/xnor_N00763)     .5261     
+
+(ccdd_gate_xor/xnor_N00767)     .0410 (ccdd_gate_xor/xnor_N00809)     .0315 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_B          0.000E+00
+    V_C          0.000E+00
+    V_CLK        0.000E+00
+    V_D          0.000E+00
+    V_VDD       -2.165E-06
+    V_A          0.000E+00
+
+    TOTAL POWER DISSIPATION   2.06E-06  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 5e-007
+
+**** 10/21/17 20:27:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT-w_sweep"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\22nm\ccdd_xor_22-PSpiceFiles\ROOT\w_sweep.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  500.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  CLK)     .9500  (N01008)     .9500 (N01229)     .9472 (N12507)     .0517     
+
+(N20361) 700.6E-06 (N20409)     .9388 (N20911)     .9500 (N20923)     .9500     
+
+(N20935)     .9500 (N20947)     .9500 (ccdd_gate_N06401)     .0109              
+
+(ccdd_gate_N07004) 472.7E-06          (ccdd_gate_N07012) 472.7E-06              
+
+(ccdd_gate_N07020) 472.7E-06          (ccdd_gate_N07028) 472.7E-06              
+
+(ccdd_gate_xor/xnor_N00719)     .4803 (ccdd_gate_xor/xnor_N00723)     .0220     
+
+(ccdd_gate_xor/xnor_N00739)     .4933 (ccdd_gate_xor/xnor_N00763)     .5377     
+
+(ccdd_gate_xor/xnor_N00767)     .0435 (ccdd_gate_xor/xnor_N00809)     .0335 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_B          0.000E+00
+    V_C          0.000E+00
+    V_CLK        0.000E+00
+    V_D          0.000E+00
+    V_VDD       -3.581E-06
+    V_A          0.000E+00
+
+    TOTAL POWER DISSIPATION   3.40E-06  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 6e-007
+
+**** 10/21/17 20:27:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT-w_sweep"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\22nm\ccdd_xor_22-PSpiceFiles\ROOT\w_sweep.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  600.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  CLK)     .9500  (N01008)     .9500 (N01229)     .9462 (N12507)     .0536     
+
+(N20361) 885.7E-06 (N20409)     .9387 (N20911)     .9500 (N20923)     .9500     
+
+(N20935)     .9500 (N20947)     .9500 (ccdd_gate_N06401)     .0113              
+
+(ccdd_gate_N07004) 590.2E-06          (ccdd_gate_N07012) 590.2E-06              
+
+(ccdd_gate_N07020) 590.2E-06          (ccdd_gate_N07028) 590.2E-06              
+
+(ccdd_gate_xor/xnor_N00719)     .4895 (ccdd_gate_xor/xnor_N00723)     .0229     
+
+(ccdd_gate_xor/xnor_N00739)     .5025 (ccdd_gate_xor/xnor_N00763)     .5460     
+
+(ccdd_gate_xor/xnor_N00767)     .0452 (ccdd_gate_xor/xnor_N00809)     .0348 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_B          0.000E+00
+    V_C          0.000E+00
+    V_CLK        0.000E+00
+    V_D          0.000E+00
+    V_VDD       -5.185E-06
+    V_A          0.000E+00
+
+    TOTAL POWER DISSIPATION   4.93E-06  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 7e-007
+
+**** 10/21/17 20:27:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT-w_sweep"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\22nm\ccdd_xor_22-PSpiceFiles\ROOT\w_sweep.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  700.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  CLK)     .9500  (N01008)     .9500 (N01229)     .9454 (N12507)     .0548     
+
+(N20361)     .0010 (N20409)     .9386 (N20911)     .9500 (N20923)     .9500     
+
+(N20935)     .9500 (N20947)     .9500 (ccdd_gate_N06401)     .0116              
+
+(ccdd_gate_N07004) 678.1E-06          (ccdd_gate_N07012) 678.1E-06              
+
+(ccdd_gate_N07020) 678.1E-06          (ccdd_gate_N07028) 678.1E-06              
+
+(ccdd_gate_xor/xnor_N00719)     .4964 (ccdd_gate_xor/xnor_N00723)     .0235     
+
+(ccdd_gate_xor/xnor_N00739)     .5094 (ccdd_gate_xor/xnor_N00763)     .5523     
+
+(ccdd_gate_xor/xnor_N00767)     .0462 (ccdd_gate_xor/xnor_N00809)     .0357 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_B          0.000E+00
+    V_C          0.000E+00
+    V_CLK        0.000E+00
+    V_D          0.000E+00
+    V_VDD       -6.875E-06
+    V_A          0.000E+00
+
+    TOTAL POWER DISSIPATION   6.53E-06  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 8e-007
+
+**** 10/21/17 20:27:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT-w_sweep"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\22nm\ccdd_xor_22-PSpiceFiles\ROOT\w_sweep.s
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  800.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  CLK)     .9500  (N01008)     .9500 (N01229)     .9448 (N12507)     .0556     
+
+(N20361)     .0011 (N20409)     .9386 (N20911)     .9500 (N20923)     .9500     
+
+(N20935)     .9500 (N20947)     .9500 (ccdd_gate_N06401)     .0118              
+
+(ccdd_gate_N07004) 741.7E-06          (ccdd_gate_N07012) 741.7E-06              
+
+(ccdd_gate_N07020) 741.7E-06          (ccdd_gate_N07028) 741.7E-06              
+
+(ccdd_gate_xor/xnor_N00719)     .5018 (ccdd_gate_xor/xnor_N00723)     .0238     
+
+(ccdd_gate_xor/xnor_N00739)     .5149 (ccdd_gate_xor/xnor_N00763)     .5573     
+
+(ccdd_gate_xor/xnor_N00767)     .0469 (ccdd_gate_xor/xnor_N00809)     .0362 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_B          0.000E+00
+    V_C          0.000E+00
+    V_CLK        0.000E+00
+    V_D          0.000E+00
+    V_VDD       -8.586E-06
+    V_A          0.000E+00
+
+    TOTAL POWER DISSIPATION   8.16E-06  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/21/17 20:27:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "ROOT-w_sweep"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\22nm\ccdd_xor_22-PSpiceFiles\ROOT\w_sweep.s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  800.0000E-09
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .34
+

@@ -1,0 +1,148 @@
+(ExpressProject "ccdd_xor_16"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\analog.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\ptm_models.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\source.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\capsym.olb"
+        (Type "Schematic Library"))
+      (File "c:\users\katerina\desktop\ptyxiaki\ptm_library\special.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "ccdd_xor_16.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\ccdd_xor_16-pspicefiles\root\root.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\ccdd_xor_16-pspicefiles\root\gate.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ccdd_xor_16-pspicefiles\root\gate.sim"
+        (DisplayName "ROOT-gate")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "C:\Users\katerina\Desktop\ptyxiaki\ptm_library\PTM_Models.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "C:\Users\katerina\Desktop\ptyxiaki\ptm_library\PTM_Models.lib")))
+    (Folder "Stimulus Files"
+      (Sort User)
+      (File ".\ccdd_xor_16-pspicefiles\ccdd_xor_16.stl"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\ccdd_xor_16-pspicefiles\ccdd_xor_16.stl")))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName
+         "C:\CADENCE2\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (DigClock
+      (FullPartName "DigClock.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (nMOS_16nm_PTM
+      (FullPartName "nMOS_16nm_PTM.Normal")
+      (LibraryName
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\PTM_MODELS.OLB")
+      (DeviceIndex "0"))
+    (pMOS_16nm_PTM
+      (FullPartName "pMOS_16nm_PTM.Normal")
+      (LibraryName
+         "C:\USERS\KATERINA\DESKTOP\PTYXIAKI\PTM_LIBRARY\PTM_MODELS.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "katerina")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\16nm\ccdd_xor_16.dsn")
+      (Path "Design Resources"
+         "C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\16nm\ccdd_xor_16.dsn"
+         "ROOT")
+      (Path "Design Resources"
+         "C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\16nm\ccdd_xor_16.dsn"
+         "FUNCTION")
+      (Path "Design Resources"
+         "C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\16nm\ccdd_xor_16.dsn"
+         "GATE")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\katerina\Desktop\synodeutiko_yliko\gates\ccdd\XOR\16nm\ccdd_xor_16.dsn"
+         "FUNCTION" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 554"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1001 104 356")
+        (Scroll "0 140")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\GATES\CCDD\XOR\16NM\CCDD_XOR_16.DSN")
+      (Schematic "ROOT")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1001 104 356")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/ccdd_gate"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\GATES\CCDD\XOR\16NM\CCDD_XOR_16.DSN")
+      (Schematic "GATE")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 897 0 252")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/ccdd_gate/xor/xnor"))
+      (Path
+         "C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\GATES\CCDD\XOR\16NM\CCDD_XOR_16.DSN")
+      (Schematic "FUNCTION")
+      (Page "PAGE1"))))

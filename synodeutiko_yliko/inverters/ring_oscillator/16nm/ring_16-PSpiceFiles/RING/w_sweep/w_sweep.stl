@@ -1,0 +1,20 @@
+* C:\Users\katerina\Desktop\ptyxiaki\projects\ring_oscillator\16nm\ring_16-PSpiceFiles\RING\w_sweep\w_sweep.stl written on Tue Oct 10 15:30:26 2017
+* by Stimulus Editor -- Serial Number: 1920102210 -- Version 16.6.0
+;!Stimulus Get
+;! stim_01 Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 5ns
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 100ps
+;!YminRes 100m
+;!Ok
+.STIMULUS stim_01 PWL
++ TIME_SCALE_FACTOR = 1
++ VALUE_SCALE_FACTOR = 1
++   ( 0, 0.9 )
++   ( 1e-010, 0 )
++   ( 2e-010, 0 )
++   ( 4e-010, 0 )
++   ( +4.6e-009, 0 )

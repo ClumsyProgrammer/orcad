@@ -1,0 +1,21 @@
+** Profile: "CHAIN-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\CHAIN\22nm\chain_22-pspicefiles\chain\w_sweep.sim ] 
+
+** Creating circuit file "w_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/synodeutiko_yliko/ptm_library/PTM_Models.lib" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 
+.STEP LIN PARAM n_size_w 200nm 600nm 100nm 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\CHAIN.net" 
+
+
+.END

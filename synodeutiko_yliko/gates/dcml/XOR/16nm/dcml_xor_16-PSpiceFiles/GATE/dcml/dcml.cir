@@ -1,0 +1,21 @@
+** Profile: "GATE-dcml"  [ C:\Users\katerina\Desktop\synodeutiko_yliko\gates\dcml\XOR\16nm\dcml_xor_16-pspicefiles\gate\dcml.sim ] 
+
+** Creating circuit file "dcml.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+.STMLIB "../../../dcml_xor_16-pspicefiles/dcml_xor_16.stl" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\GATE.net" 
+
+
+.END

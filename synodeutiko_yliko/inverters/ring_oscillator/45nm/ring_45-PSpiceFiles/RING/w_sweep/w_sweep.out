@@ -1,0 +1,522 @@
+
+**** 10/21/17 14:33:17 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "RING-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45-pspicefiles\ring\w_
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "w_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/katerina/Desktop/ptyxiaki/ptm_library/PTM_Models.lib" 
+.STMLIB "../../../ring_45-pspicefiles/ring_45.stl" 
+* From [PSPICE NETLIST] section of C:\Users\katerina\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 
+.STEP LIN PARAM n_size_w 600nm 1000nm 100nm 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\RING.net" 
+
+
+
+**** INCLUDING RING.net ****
+* source RING_45
+V_Vin         N00124 0 {vdd_nominal}
+M_not_1_M2         N05076 Q 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_1_M1         N05076 Q N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_2_M2         N05080 N05076 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_2_M1         N05080 N05076 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_3_M2         N05084 N05080 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_3_M1         N05084 N05080 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_4_M2         N05088 N05084 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_4_M1         N05088 N05084 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_5_M2         N05100 N05088 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_5_M1         N05100 N05088 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_6_M2         N05096 N05100 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_6_M1         N05096 N05100 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_7_M2         N05092 N05096 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_7_M1         N05092 N05096 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_8_M2         N05067 N05092 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_8_M1         N05067 N05092 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_9_M2         N05063 N05067 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_9_M1         N05063 N05067 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_10_M2         N08607 N05063 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_not_10_M1         N08607 N05063 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_11_M1         Q N08607 N00124 N00124 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_not_11_M2         Q N08607 0 0 nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_or_M2         N00124 Q Q Q nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+M_or_M3         or_N00757 STIM Q Q pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_or_M4         0 Q or_N00757 or_N00757 pMOS_45nm_PTM  
++ L={p_size_l}  
++ W={p_size_w}         
+M_or_M1         N00124 STIM Q Q nMOS_45nm_PTM  
++ L={n_size_l}  
++ W={n_size_w}         
+V_V1         STIM 0   STIMULUS=stim_01
+.PARAM  n_size_l=50nm p_to_n_ratio=1.44 p_size_w={ p_to_n_ratio * n_size_w }
++  n_size_w=800nm p_size_l={n_size_l} vdd_nominal=1.1
+
+**** RESUMING w_sweep.cir ****
+.END
+
+* C:\Users\katerina\Desktop\ptyxiaki\projects_final\ring_oscillator\16nm\ring_16-PSpiceFiles\RING_16.stl written on Sat Oct 21 14:13
+* by Stimulus Editor -- Serial Number: 1920102210 -- Version 16.6.0
+;!Stimulus Get
+;! stim_01 Analog
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 1ns
+;!Yrange 0 1
+;!AutoUniverse
+;!XminRes 10ps
+;!YminRes 100m
+;!Ok
+.STIMULUS stim_01 PWL
++ TIME_SCALE_FACTOR = 1
++ VALUE_SCALE_FACTOR = 1
++   ( 0, 0 )
++   ( 4e-011, 0.9 )
++   ( 8e-011, 0 )
++   ( +8.2e-010, 0 )
+
+**** 10/21/17 14:33:17 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "RING-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45-pspicefiles\ring\w_
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nMOS_45nm_PTM   pMOS_45nm_PTM   
+               NMOS            PMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    5               5            
+           L   50.000000E-09   50.000000E-09 
+           W   50.000000E-09   50.000000E-09 
+         VTO     .98666         -.98666      
+          KP   42.000000E-06   42.000000E-06 
+       GAMMA    1               1            
+         PHI     .7              .7          
+      LAMBDA     .5              .5          
+         RSH    5               5            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO  110.000000E-12  110.000000E-12 
+        CGDO  110.000000E-12  110.000000E-12 
+        CGBO   25.600000E-12   25.600000E-12 
+         TOX  100.000000E-09  100.000000E-09 
+          XJ   14.000000E-09   14.000000E-09 
+       DELTA     .01             .01         
+      DIOMOD    1               1            
+         VFB    -.55            -.55         
+          K1     .4              .4          
+          K2    0               -.01         
+        LETA     .1              .1          
+        WETA     .25             .25         
+          U0     .049            .021        
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+        VTH0     .62261         -.587        
+          K3    0               0            
+        DVT0    1               1            
+        DVT1    2               2            
+          UA  600.000000E-12    2.000000E-09 
+          UB    1.200000E-18  500.000000E-21 
+          UC    0               0            
+        VSAT  130.000000E+03   90.000000E+03 
+        RDSW  210             250            
+        VOFF    -.13            -.126        
+     NFACTOR    1.6             1.8          
+        CDSC    0               0            
+        PCLM     .02             .12         
+      PDIBL1    1.000000E-03    1.000000E-03 
+      PDIBL2    1.000000E-03    1.000000E-03 
+       DROUT     .5                          
+      PSCBE1  814.000000E+06  814.000000E+06 
+      PSCBE2  100.000000E-09  958.000000E-09 
+          A0    1               1            
+          A1    0               0            
+          A2    1               1            
+         UA1    4.310000E-09    4.310000E-09 
+         UB1    7.610000E-18    7.610000E-18 
+         UC1  -56.000000E-12  -56.000000E-12 
+        PVAG   10.000000E-21   10.000000E-21 
+        KETA     .04                         
+        ETA0     .0125           .0125       
+        ETAB    0               0            
+        DVT2    0                            
+        DSUB     .1              .1          
+       NGATE  100.000000E+21  100.000000E+21 
+      MOBMOD    0               0            
+         AGS                   10.000000E-21 
+       DVT1W    0               0            
+       DVT2W    0               0            
+        PRWG    0               0            
+     PDIBLCB   -5.000000E-03   34.000000E-09 
+      ALPHA0     .074            .074        
+        CGSL  265.300000E-12  265.300000E-12 
+        CGDL  265.300000E-12  265.300000E-12 
+        WINT    5.000000E-09    5.000000E-09 
+    PARAMCHK    1               1            
+     VERSION    4               4            
+      ALPHA1    5.000000E-03    5.000000E-03 
+        TOXM    1.800000E-09    1.820000E-09 
+         TPB    5.000000E-03    5.000000E-03 
+         TCJ    1.000000E-03    1.000000E-03 
+       TPBSW    5.000000E-03    5.000000E-03 
+       TCJSW    1.000000E-03    1.000000E-03 
+      TPBSWG    5.000000E-03    5.000000E-03 
+      TCJSWG    1.000000E-03    1.000000E-03 
+        NOFF     .9              .9          
+      VOFFCV     .02             .02         
+         COX  700.000000E-06  700.000000E-06 
+          E0    1.000000E+12    1.000000E+12 
+    rbodyMod    1               1            
+    rgateMod    1               1            
+      geoMod    1               1            
+      igcMod    1               1            
+      igbMod    1               1            
+        toxe    1.800000E-09    1.820000E-09 
+        toxp    1.500000E-09    1.500000E-09 
+        dtox  300.000000E-12  320.000000E-12 
+        ndep    3.240000E+18    2.440000E+18 
+         nsd  200.000000E+18  200.000000E+18 
+       dvtp0  100.000000E-12   10.000000E-12 
+       dvtp1     .1              .05         
+        lpe0    0               0            
+        minv     .05             .05         
+         rsw   80              75            
+         rdw   80              75            
+      fprout     .2              .2          
+       pdits     .08             .08         
+      pditsd     .23             .23         
+      pditsl    2.300000E+06    2.300000E+06 
+       agidl  200.000000E-06  200.000000E-06 
+       bgidl    2.100000E+09    2.100000E+09 
+       cgidl  200.000000E-06  200.000000E-06 
+        aigc     .015211        9.700000E-03 
+        bigc    2.743200E-03    1.250000E-03 
+        cigc    2.000000E-03  800.000000E-06 
+       aigsd     .015211        9.700000E-03 
+       bigsd    2.743200E-03    1.250000E-03 
+       cigsd    2.000000E-03  800.000000E-06 
+     aigbacc     .012            .012        
+     bigbacc    2.800000E-03    2.800000E-03 
+     cigbacc    2.000000E-03    2.000000E-03 
+     aigbinv     .014            .014        
+     bigbinv    4.000000E-03    4.000000E-03 
+     cigbinv    4.000000E-03    4.000000E-03 
+      xrcrg2    5               5            
+      toxref    1.800000E-09    1.820000E-09 
+    ijthdfwd     .01             .01         
+    ijthsfwd     .01             .01         
+    ijthdrev    1.000000E-03    1.000000E-03 
+    ijthsrev    1.000000E-03    1.000000E-03 
+       gbmin  100.000000E-12  100.000000E-12 
+        rbdb   15              15            
+        rbsb   15              15            
+        rbpb    5               5            
+        rbps   15              15            
+        rbpd   15              15            
+     ckappas     .03             .03         
+     ckappad     .03             .03         
+         dwj    0               0            
+        rshg     .4              .4          
+      CJSWGD  500.000000E-12  500.000000E-12 
+      PBSWGD    1               1            
+      MJSWGD     .33             .33         
+      CJSWGS  300.000000E-12  300.000000E-12 
+      PBSWGS    1               1            
+      MJSWGS     .33             .33         
+        JSWS   10.000000E-12   10.000000E-12 
+       JSWGS  100.000000E-12  100.000000E-12 
+        JSWD   10.000000E-12   10.000000E-12 
+       JSWGD  100.000000E-12  100.000000E-12 
+
+
+Model-Specific Temperatures During Sweep  Param value = 6e-007
+
+**** 10/21/17 14:33:17 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "RING-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45-pspicefiles\ring\w_
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  600.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    Q)     .5732  ( STIM)    0.0000  (N00124)    1.1000 (N05063)     .5732     
+
+(N05067)     .5732 (N05076)     .5732 (N05080)     .5732 (N05084)     .5732     
+
+(N05088)     .5732 (N05092)     .5732 (N05096)     .5732 (N05100)     .5732     
+
+(N08607)     .5732 (or_N00757)     .5732                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vin       -6.415E-06
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   7.06E-06  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 7e-007
+
+**** 10/21/17 14:33:17 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "RING-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45-pspicefiles\ring\w_
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  700.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    Q)     .5720  ( STIM)    0.0000  (N00124)    1.1000 (N05063)     .5720     
+
+(N05067)     .5720 (N05076)     .5720 (N05080)     .5720 (N05084)     .5720     
+
+(N05088)     .5720 (N05092)     .5720 (N05096)     .5720 (N05100)     .5720     
+
+(N08607)     .5720 (or_N00757)     .5720                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vin       -9.044E-06
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   9.95E-06  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 8e-007
+
+**** 10/21/17 14:33:17 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "RING-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45-pspicefiles\ring\w_
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  800.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    Q)     .5711  ( STIM)    0.0000  (N00124)    1.1000 (N05063)     .5711     
+
+(N05067)     .5711 (N05076)     .5711 (N05080)     .5711 (N05084)     .5711     
+
+(N05088)     .5711 (N05092)     .5711 (N05096)     .5711 (N05100)     .5711     
+
+(N08607)     .5711 (or_N00757)     .5711                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vin       -1.182E-05
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.30E-05  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 9e-007
+
+**** 10/21/17 14:33:17 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "RING-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45-pspicefiles\ring\w_
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =  900.0000E-09
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    Q)     .5704  ( STIM)    0.0000  (N00124)    1.1000 (N05063)     .5704     
+
+(N05067)     .5704 (N05076)     .5704 (N05080)     .5704 (N05084)     .5704     
+
+(N05088)     .5704 (N05092)     .5704 (N05096)     .5704 (N05100)     .5704     
+
+(N08607)     .5704 (or_N00757)     .5704                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vin       -1.468E-05
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.62E-05  WATTS
+
+
+Model-Specific Temperatures During Sweep  Param value = 1e-006
+
+**** 10/21/17 14:33:17 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "RING-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45-pspicefiles\ring\w_
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =    1.0000E-06
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    Q)     .5699  ( STIM)    0.0000  (N00124)    1.1000 (N05063)     .5699     
+
+(N05067)     .5699 (N05076)     .5699 (N05080)     .5699 (N05084)     .5699     
+
+(N05088)     .5699 (N05092)     .5699 (N05096)     .5699 (N05100)     .5699     
+
+(N08607)     .5699 (or_N00757)     .5699                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vin       -1.762E-05
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.94E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/21/17 14:33:17 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "RING-w_sweep"  [ C:\USERS\KATERINA\DESKTOP\SYNODEUTIKO_YLIKO\INVERTERS\ring_oscillator\45nm\ring_45-pspicefiles\ring\w_
+
+
+ ****     JOB STATISTICS SUMMARY
+
+ ****     CURRENT STEP                     PARAM N_SIZE_W =    1.0000E-06
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .30
+

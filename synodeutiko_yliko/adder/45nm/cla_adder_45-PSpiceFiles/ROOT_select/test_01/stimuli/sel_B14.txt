@@ -1,0 +1,5 @@
+0ns 0V
+1ns 0V
+1.1ns 0V
+3.1ns 0V
+3.2ns 0V
